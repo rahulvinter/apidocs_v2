@@ -19,10 +19,12 @@ externalDocs:
   description: Find out how to create a GitHub repo for your OpenAPI definition.
   url: 'https://github.com/Rebilly/generator-openapi-repo'
 tags:
-  - name: Echo
-    description: Example echo operations
-  - name: User
-    description: Operations about user
+  - name: Vinter Mid Index
+    description: The vinter mid index endpoint
+  - name: Vinter Reference Index
+    description: The vinter reference index endpoint
+  - name: Vinter Realtime Index
+    description: The vinter realtime index endpoint
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
