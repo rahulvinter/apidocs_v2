@@ -26,15 +26,34 @@ tags:
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
-  '/realtime_index/':
-    $ref: 'paths/realtime_index.yaml'
-  '/reference_index/':
-    $ref: 'paths/reference_index.yaml'
-  '/vinter_mid_index/':
-    $ref: 'paths/vinter_mid_index.yaml'
+  /realtime_index/:
+    $ref: paths/realtime_index.yaml
+  /reference_index/:
+    $ref: paths/reference_index.yaml
+  /vinter_mid_index/:
+    $ref: paths/vinter_mid_index.yaml
 components:
   securitySchemes:
     api_key:
       type: apiKey
       in: header
       name: api_key
+  schemas:
+    Realtime-Index:
+      title: Realtime-Index
+      type: object
+      properties:
+        id:
+          type: string
+    Reference-Index:
+      title: Reference-Index
+      type: object
+      properties:
+        id:
+          type: string
+    Vinter-Mid-Index:
+      title: Vinter-Mid-Index
+      type: object
+      properties:
+        id:
+          type: string
