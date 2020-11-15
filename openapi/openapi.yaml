@@ -15,9 +15,6 @@ info:
   description: |
     # Introduction
     This API definition describes Vinter Capital's API enpoints.
-externalDocs:
-  description: Find out how to create a GitHub repo for your OpenAPI definition.
-  url: 'https://github.com/Rebilly/generator-openapi-repo'
 tags:
   - name: Vinter Mid Index
     description: The vinter mid index endpoint
