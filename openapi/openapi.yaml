@@ -38,22 +38,4 @@ components:
       type: apiKey
       in: header
       name: api_key
-  schemas:
-    Realtime-Index:
-      title: Realtime-Index
-      type: object
-      properties:
-        id:
-          type: string
-    Reference-Index:
-      title: Reference-Index
-      type: object
-      properties:
-        id:
-          type: string
-    Vinter-Mid-Index:
-      title: Vinter-Mid-Index
-      type: object
-      properties:
-        id:
-          type: string
+  schemas: {}
