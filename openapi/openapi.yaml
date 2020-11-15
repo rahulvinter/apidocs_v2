@@ -1,12 +1,12 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: vinterapi.com
+  title: The Vinter APIs
   termsOfService: 'https://vinterapi.com/terms/'
   contact:
     email: contact@vinter.capital
     url: 'https://vintercapital.com/contact'
-    name: Hakan Holmberg
+    name: contact
   license:
     name: 'Proprietary '
     url: www.vinter.capital
