@@ -11,7 +11,7 @@ info:
     name: 'Proprietary '
     url: www.vinter.capital
   x-logo:
-    url: 'https://github.com/VinterCapital/apidocs/blob/main/docs/VINTERPODD.png'
+    url: 'https://raw.github.com/VinterCapital/apidocs/blob/main/docs/VINTERPODD.png'
   description: |
     # Introduction
     This API definition describes Vinter Capital's API enpoints.
