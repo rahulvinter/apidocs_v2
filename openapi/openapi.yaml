@@ -14,7 +14,7 @@ info:
     url: 'https://redocly.github.io/openapi-template/logo.png'
   description: |
     # Introduction
-    This API definition describesVinter Capital's API enpoints.
+    This API definition describes Vinter Capital's API enpoints.
 externalDocs:
   description: Find out how to create a GitHub repo for your OpenAPI definition.
   url: 'https://github.com/Rebilly/generator-openapi-repo'
@@ -26,10 +26,12 @@ tags:
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
-  '/users/{username}':
-    $ref: 'paths/users@{username}.yaml'
-  /echo:
-    $ref: paths/echo.yaml
+  '/realtime_index/':
+    $ref: 'paths/realtime_index.yaml'
+  '/reference_index/':
+    $ref: 'paths/reference_index.yaml'
+  '/vinter_mid_index/':
+    $ref: 'paths/vinter_mid_index.yaml'
 components:
   securitySchemes:
     api_key:
