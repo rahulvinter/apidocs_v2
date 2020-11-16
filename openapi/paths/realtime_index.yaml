@@ -7,17 +7,12 @@ get:
     You can use `markdown` here.
   operationId: 
   parameters:
-    - name: username
+    - name: symbol
       in: path
       description: The name that needs to be fetched
       required: true
       schema:
         type: string
-    - name: with_email
-      in: query
-      description: Filter users without email
-      schema:
-        type: boolean
   security:
     - main_auth:
         - 'read:users'
@@ -30,42 +25,18 @@ get:
           schema:
             $ref: ../components/schemas/realtime_index.yaml
           example:
-            username: user1
-            email: user@example.com
-    '403':
-      description: Forbidden
+            symbol: RIT_BTCUSD
+            value: 15000.00
+            datetime: 2020-08-10T20:00:00.00Z
+    '401':
+      description: Not a valid Api-Key
+      ontent:
+        application/json:
+          schema:
+            $ref: ../components/schemas/realtime_index.yaml
+          example:
+            symbol: RIT_BTCUSD
+            value: 15000.00
+            datetime: 2020-08-10T20:00:00.00Z
     '404':
       description: User not found
-put:
-  tags:
-    - Vinter Reference Index
-  summary: Updated user
-  description: This can only be done by the logged in user.
-  operationId: updateUser
-  parameters:
-    - name: username
-      in: path
-      description: The name that needs to be updated
-      required: true
-      schema:
-        type: string
-  security:
-    - main_auth:
-        - 'write:users'
-  responses:
-    '200':
-      description: OK
-    '400':
-      description: Invalid user supplied
-    '404':
-      description: User not found
-  requestBody:
-    content:
-      application/json:
-        schema:
-          $ref: ../components/schemas/realtime_index.yaml
-      application/xml:
-        schema:
-          $ref: ../components/schemas/realtime_index.yaml
-    description: Updated user object
-    required: true

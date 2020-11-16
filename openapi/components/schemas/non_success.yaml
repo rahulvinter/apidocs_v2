@@ -1,0 +1,18 @@
+title: non_success
+type: object
+properties:
+  result:
+    description: success if response code is 200 otherwise error
+    type: string
+    example: error
+  message:
+    description: result message    
+    type: string
+    example: Your API key is not valid
+  params:
+    description: The parameters that were used in the request
+    type: object
+    additionalProperties:
+      type: string
+    example: {'symbol': 'D1H_BTCUSD_DRR_MEAN',
+              'since': "2020-08-10T20:00:00.00Z"}
