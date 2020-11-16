@@ -33,7 +33,7 @@ paths:
     $ref: paths/vinter_universe.yaml
 components:
   securitySchemes:
-    api_key:
+    Api-Key:
       type: apiKey
       in: header
       name: Api-Key
