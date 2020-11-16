@@ -32,8 +32,8 @@ paths:
   /vinter_universe/:
     $ref: paths/vinter_universe.yaml
 components:
+  description: Gets the account billing info
   securitySchemes:
-    summary: Gets the account billing info
     Api-Key:
       type: apiKey
       in: header
