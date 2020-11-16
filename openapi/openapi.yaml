@@ -16,8 +16,8 @@ info:
     # Introduction
     This API definition describes Vinter Capital's API enpoints.
 tags:
-  - name: Vinter Mid Index
-    description: The vinter mid index endpoint
+  - name: Vinter Universe
+    description: Information on eligible exchanges and constituents
   - name: Vinter Reference Index
     description: The vinter reference index endpoint
   - name: Vinter Realtime Index
@@ -29,8 +29,8 @@ paths:
     $ref: paths/realtime_index.yaml
   /reference_index/:
     $ref: paths/reference_index.yaml
-  /vinter_mid_index/:
-    $ref: paths/vinter_mid_index.yaml
+  /vinter_universe/:
+    $ref: paths/vinter_universe.yaml
 components:
   securitySchemes:
     api_key:

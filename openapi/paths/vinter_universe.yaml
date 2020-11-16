@@ -1,6 +1,6 @@
 post:
   tags:
-    - Vinter Mid Index
+    - Vinter Universe
   summary: Echo test
   description: Receive the exact message you've sent
   operationId: echo
