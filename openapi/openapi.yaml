@@ -16,12 +16,14 @@ info:
     # Introduction
     This API definition describes Vinter Capital's API enpoints.
 tags:
+  - name: Authentication
+    description: Test
   - name: Vinter Universe
     description: Information on eligible exchanges and constituents
   - name: Vinter Reference Index
     description: The vinter reference index endpoint
   - name: Vinter Realtime Index
-    description: The vinter realtime index endpoint
+    description: The vinter realtime index endpoint 
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
