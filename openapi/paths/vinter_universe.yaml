@@ -1,17 +1,10 @@
 get:
   tags:
     - Vinter Universe
-  summary: Get Vinter Reference Indexes
+  summary: Get Vinter constituent universe
   description: |
-    This endpoint returns the last Vinter Reference Index value.
+    This endpoint returns the current Vinter constituent universe
   operationId: 
-  parameters:
-    - name: symbol
-      in: path
-      description: The name that needs to be fetched
-      required: true
-      schema:
-        type: string
   security:
     - main_auth:
         - 'read:users'
