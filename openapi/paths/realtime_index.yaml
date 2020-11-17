@@ -3,7 +3,6 @@ get:
     - Vinter Realtime Index
   summary: Get Vinter Realtime Indexes
   description: This endpoint returns the last Vinter Realtime Index value.
-  operationId: 
   parameters:
     - name: symbol
       in: path

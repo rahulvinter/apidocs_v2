@@ -4,7 +4,6 @@ get:
   summary: Get Vinter constituent universe
   description: |
     This endpoint returns the current Vinter constituent universe
-  operationId: 
   responses:
     '200':
       description: Success
