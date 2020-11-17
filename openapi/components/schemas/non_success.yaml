@@ -30,7 +30,7 @@ properties:
       value:
         type: number
   data:
-    description: List of obtained records
+    description: Empty string
     type: string
     example: ""
 description: The schema that is returned for an errod code
