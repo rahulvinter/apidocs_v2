@@ -16,8 +16,8 @@ info:
     # Introduction
     This API definition describes Vinter Capital's API enpoints.
 tags:
-  #- name: Vinter Universe
-  #  description: Information on eligible exchanges and constituents
+  - name: Vinter Universe
+    description: Information on eligible exchanges and constituents
   - name: Vinter Reference Index
     description: The vinter reference index endpoint
   - name: Vinter Realtime Index
