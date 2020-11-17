@@ -18,19 +18,19 @@ get:
           schema:
             $ref: ../components/schemas/realtime_index.yaml
     '400':
-      description: Your paramaters seem to be incorrectly specified
+      description: Bad Request
       content:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
     '401':
-      description: Provide a valid API key using the Authorization header
+      description: Unauthorized 
       content:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
     '429':
-      description: Provide a valid API key using the Authorization header
+      description: Too Many Requests
       content:
         application/json:
           schema:
