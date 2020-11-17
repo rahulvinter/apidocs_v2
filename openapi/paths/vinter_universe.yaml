@@ -10,12 +10,29 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/universe.yaml
-    '401':
-      description: "Provide a valid API key using the Authorization header"
+            $ref: ../components/schemas/realtime_index.yaml
+    '400':
+      description: Bad Request
       content:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
-    '404':
-      description: User not found
+    '401':
+      description: Unauthorized 
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '429':
+      description: Too Many Requests
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '500':
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+        

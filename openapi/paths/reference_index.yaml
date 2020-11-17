@@ -11,26 +11,35 @@ get:
       required: true
       schema:
         type: string
-  responses:
+ responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
             $ref: ../components/schemas/realtime_index.yaml
-          example:
-            symbol: RIT_BTCUSD
-            value: 15000.00
-            datetime: 2020-08-10T20:00:00.00Z
-    '401':
-      description: "Provide a valid API key using the Authorization header"
+    '400':
+      description: Bad Request
       content:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
-          example:
-            symbol: RIT_BTCUSD
-            value: 15000.00
-            datetime: 2020-08-10T20:00:00.00Z
-    '404':
-      description: User not found
+    '401':
+      description: Unauthorized 
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '429':
+      description: Too Many Requests
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '500':
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+        
