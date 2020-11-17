@@ -17,7 +17,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/realtime_index.yaml
+            $ref: ../components/schemas/reference_index.yaml
     '400':
       description: Bad Request
       content:
