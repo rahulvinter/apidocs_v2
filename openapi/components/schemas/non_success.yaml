@@ -6,7 +6,7 @@ properties:
     type: string
     example: error
   message:
-    description: result message    
+    description: result message
     type: string
     example: Your API key is not valid
   params:
@@ -14,12 +14,26 @@ properties:
     type: object
     additionalProperties:
       type: string
-    example: {'symbol': 'D1H_BTCUSD_DRR_MEAN',
-              'since': "2020-08-10T20:00:00.00Z"}
+    example:
+      symbol: D1H_BTCUSD_DRR_MEAN
+      since: '2020-08-10T20:00:00.00Z'
+    properties:
+      symbol:
+        type: string
+      value:
+        type: number
   data:
     description: List of obtained records
     type: array
+    example:
+      - symbol: D1H_BTCUSD_DRR_MEAN
+        value: 15000
     items:
       type: object
-    example: [{'symbol': 'D1H_BTCUSD_DRR_MEAN',
-              'value': 15000.00}]
+      properties:
+        datetime:
+          type: string
+        symbol:
+          type: string
+        value:
+          type: string
