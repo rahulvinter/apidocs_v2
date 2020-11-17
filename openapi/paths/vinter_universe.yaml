@@ -17,8 +17,6 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/universe.yaml
-          example:
-            datetime: 2020-08-10T20:00:00.00Z
     '401':
       description: Not a valid Api-Key
       ontent:
