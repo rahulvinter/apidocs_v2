@@ -1,5 +1,0 @@
-title: universe
-type: object
-properties:
-  id:
-    type: string
