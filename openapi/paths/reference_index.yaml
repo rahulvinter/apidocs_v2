@@ -10,7 +10,7 @@ get:
       required: true
       schema:
         type: string
- responses:
+  responses:
     '200':
       description: Success
       content:
