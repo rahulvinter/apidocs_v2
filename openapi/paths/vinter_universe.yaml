@@ -1,45 +1,42 @@
-post:
+get:
   tags:
-    - Vinter Universe
-  summary: Echo test
-  description: Receive the exact message you've sent
-  operationId: echo
+    - Vinter Realtime Index
+  summary: Get Vinter Reference Indexes
+  description: |
+    Some description of the operation.
+    You can use `markdown` here.
+  operationId: 
+  parameters:
+    - name: symbol
+      in: path
+      description: The name that needs to be fetched
+      required: true
+      schema:
+        type: string
   security:
+    - main_auth:
+        - 'read:users'
     - api_key: []
-    - basic_auth: []
   responses:
     '200':
-      description: OK
-      headers:
-        X-Rate-Limit:
-          description: calls per hour allowed by the user
-          schema:
-            type: integer
-            format: int32
-        X-Expires-After:
-          $ref: ../components/headers/ExpiresAfter.yaml
+      description: Success
       content:
         application/json:
           schema:
-            type: string
-          examples:
-            response:
-              value: Hello world!
-        application/xml:
+            $ref: ../components/schemas/realtime_index.yaml
+          example:
+            symbol: RIT_BTCUSD
+            value: 15000.00
+            datetime: 2020-08-10T20:00:00.00Z
+    '401':
+      description: Not a valid Api-Key
+      ontent:
+        application/json:
           schema:
-            type: string
-        text/csv:
-          schema:
-            type: string
-  requestBody:
-    content:
-      application/json:
-        schema:
-          type: string
-          example: Hello world!
-      application/xml:
-        schema:
-          type: string
-          example: Hello world!
-    description: Echo payload
-    required: true
+            $ref: ../components/schemas/realtime_index.yaml
+          example:
+            symbol: RIT_BTCUSD
+            value: 15000.00
+            datetime: 2020-08-10T20:00:00.00Z
+    '404':
+      description: User not found
