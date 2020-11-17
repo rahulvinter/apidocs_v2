@@ -18,7 +18,14 @@ info:
       ```
       Authorization : Api-Key ********
       ```
-      
+    In python this can be done using the request library
+      ```
+      import requests
+      url = 'https://wwww.vinterapi.com/api/v1/vinter_universe/'
+      headers = {'Authorization': *****}
+      r = requests.get(url, headers=headers)
+      ```
+
 tags:
   - name: Vinter Universe
     description: Information on eligible exchanges and constituents
