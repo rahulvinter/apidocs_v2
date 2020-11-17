@@ -15,7 +15,7 @@ properties:
   result:
     description: success if response code is 200 otherwise error
     type: string
-    example: error
+    example: success
   message:
     description: result message
     type: string
