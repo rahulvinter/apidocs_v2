@@ -1,10 +1,9 @@
 get:
   tags:
-    - Vinter Realtime Index
+    - Vinter Reference Index
   summary: Get Vinter Reference Indexes
   description: |
-    Some description of the operation.
-    You can use `markdown` here.
+    This endpoint returns the last Vinter Reference Index value.
   operationId: 
   parameters:
     - name: symbol
