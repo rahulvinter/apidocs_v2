@@ -1,18 +1,11 @@
 get:
   tags:
-    - Vinter Realtime Index
-  summary: Get Vinter Reference Indexes
+    - Vinter Universe
+  summary: Get the Vinter universe of elgible exchanges and constituents
   description: |
-    Some description of the operation.
-    You can use `markdown` here.
+    This endpoint returns the current eligible constituents and exchanges.
   operationId: 
   parameters:
-    - name: symbol
-      in: path
-      description: The name that needs to be fetched
-      required: true
-      schema:
-        type: string
   security:
     - main_auth:
         - 'read:users'
@@ -23,17 +16,16 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/realtime_index.yaml
+            $ref: ../components/schemas/vinter_universe.yaml
           example:
-            symbol: RIT_BTCUSD
-            value: 15000.00
+            universe: {kraken: ['btc-usd', 'eth-usd']}
             datetime: 2020-08-10T20:00:00.00Z
     '401':
       description: Not a valid Api-Key
       ontent:
         application/json:
           schema:
-            $ref: ../components/schemas/realtime_index.yaml
+            $ref: ../components/schemas/non_success.yaml
           example:
             symbol: RIT_BTCUSD
             value: 15000.00
