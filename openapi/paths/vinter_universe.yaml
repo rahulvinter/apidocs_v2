@@ -1,11 +1,17 @@
 get:
   tags:
-    - Vinter Universe
-  summary: Get the Vinter universe of elgible exchanges and constituents
+    - Vinter Reference Index
+  summary: Get Vinter Reference Indexes
   description: |
-    This endpoint returns the current eligible constituents and exchanges.
+    This endpoint returns the last Vinter Reference Index value.
   operationId: 
   parameters:
+    - name: symbol
+      in: path
+      description: The name that needs to be fetched
+      required: true
+      schema:
+        type: string
   security:
     - main_auth:
         - 'read:users'
@@ -16,6 +22,20 @@ get:
       content:
         application/json:
           schema:
-            title: non_success
-            type: object
-            # $ref: ../components/schemas/universe.yaml
+            $ref: ../components/schemas/realtime_index.yaml
+          example:
+            symbol: RIT_BTCUSD
+            value: 15000.00
+            datetime: 2020-08-10T20:00:00.00Z
+    '401':
+      description: Not a valid Api-Key
+      ontent:
+        application/json:
+          schema:
+            $ref: ../components/schemas/realtime_index.yaml
+          example:
+            symbol: RIT_BTCUSD
+            value: 15000.00
+            datetime: 2020-08-10T20:00:00.00Z
+    '404':
+      description: User not found
