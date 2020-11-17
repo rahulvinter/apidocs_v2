@@ -2,11 +2,15 @@ title: non_success
 type: object
 x-examples:
   example-1:
-    result: error
-    message: Not a valid API key
+    result: success
+    message: Success
     params:
       symbol: D1H_BTCUSD_DRR_MEAN
-    data: ''
+    data:
+      - symbol: D1H_BTCUSD_DRR_MEAN
+        value: 15000
+        datetime: '2020-08-10T20:00:00.00Z'
+description: The schema that is returned for an errod code
 properties:
   result:
     description: success if response code is 200 otherwise error
@@ -31,8 +35,8 @@ properties:
         type: number
   data:
     description: List of obtained records
-    type: string
+    type: array
     example:
       - symbol: D1H_BTCUSD_DRR_MEAN
         value: 15000
-description: The schema that is returned for an errod code
+    items: {}
