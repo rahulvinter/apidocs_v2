@@ -6,9 +6,7 @@ get:
     This endpoint returns the current Vinter constituent universe
   operationId: 
   security:
-    - main_auth:
-        - 'read:users'
-    - api_key: []
+    - api_key: ["Api-Key"]
   responses:
     '200':
       description: Success
