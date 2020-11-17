@@ -17,6 +17,7 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/universe.yaml
+
     '401':
       description: Not a valid Api-Key
       ontent:
