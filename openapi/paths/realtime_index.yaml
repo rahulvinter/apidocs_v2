@@ -17,11 +17,28 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/realtime_index.yaml
-    '401':
-      description: "Provide a valid API key using the Authorization header"
+    '400':
+      description: Your paramaters seem to be incorrectly specified
       content:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
-    '404':
-      description: User not found
+    '401':
+      description: Provide a valid API key using the Authorization header
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '429':
+      description: Provide a valid API key using the Authorization header
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '500':
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+        
