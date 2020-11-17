@@ -32,7 +32,5 @@ properties:
   data:
     description: List of obtained records
     type: string
-    example:
-      - symbol: D1H_BTCUSD_DRR_MEAN
-        value: 15000
+    example: ""
 description: The schema that is returned for an errod code
