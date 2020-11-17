@@ -16,7 +16,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/vinter_universe.yaml
+            $ref: ../components/schemas/universe.yaml
           example:
             universe: {kraken: ['btc-usd', 'eth-usd']}
             datetime: 2020-08-10T20:00:00.00Z
