@@ -42,12 +42,3 @@ paths:
     $ref: paths/reference_index.yaml
   /vinter_universe/:
     $ref: paths/vinter_universe.yaml
-# components:
-#  securitySchemes:
-#    Api-Key:
-#      type: apiKey
-#      in: header
-#      name: Api-Key
-#  schemas: {}
-#security:
-#  - ApiKeyAuth: []
