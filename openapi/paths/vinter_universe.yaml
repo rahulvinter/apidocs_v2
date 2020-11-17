@@ -16,4 +16,4 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/universe.yaml
+            # $ref: ../components/schemas/universe.yaml
