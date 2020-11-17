@@ -16,4 +16,6 @@ get:
       content:
         application/json:
           schema:
+            title: non_success
+            type: object
             # $ref: ../components/schemas/universe.yaml
