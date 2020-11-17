@@ -25,7 +25,7 @@ info:
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
-
+    where ***** is your API key.
 tags:
   - name: Vinter Universe
     description: Information on eligible exchanges and constituents
