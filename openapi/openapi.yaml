@@ -15,8 +15,7 @@ info:
   description: |
     # Introduction
     This API definition describes Vinter Capital's API enpoints. An API key is      required for all endpoints and can be requested by sending a e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field
-      
-      Authorization: Api-Key ********
+      Authorization Api-Key ********
 tags:
   - name: Vinter Universe
     description: Information on eligible exchanges and constituents
