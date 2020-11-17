@@ -10,10 +10,10 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/realtime_index.yaml
+            $ref: ../components/schemas/universe.yaml
           example:
             symbol: RIT_BTCUSD
-            value: 15000.00
+            markets: 
             datetime: 2020-08-10T20:00:00.00Z
     '401':
       description: Not a valid Api-Key
