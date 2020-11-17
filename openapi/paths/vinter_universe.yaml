@@ -12,7 +12,7 @@ get:
           schema:
             $ref: ../components/schemas/universe.yaml
     '401':
-      description: "Provide a valid API key using the Authorization heaader"
+      description: "Provide a valid API key using the Authorization header"
       content:
         application/json:
           schema:
