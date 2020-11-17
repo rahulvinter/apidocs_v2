@@ -25,7 +25,11 @@ info:
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
-    where the stars are your API key.
+    where the stars are your API key. The API can also be accessed vi curl by
+      ```
+      curl -H "Authorization: *****" wwww.vinterapi.com/api/v1/vinter_universe/
+      ```
+
 tags:
   - name: Vinter Universe
     description: Information on eligible exchanges and constituents
