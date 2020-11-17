@@ -18,7 +18,7 @@ get:
           schema:
             $ref: ../components/schemas/realtime_index.yaml
     '401':
-      description: Not a valid Api-Key
+      description: "Provide a valid API key using the Authorization heaader"
       content:
         application/json:
           schema:
