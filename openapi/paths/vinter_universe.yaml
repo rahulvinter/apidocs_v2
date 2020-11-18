@@ -4,6 +4,13 @@ get:
   summary: Get Vinter constituent universe
   description: |
     This endpoint returns the current Vinter constituent universe
+  parameters:
+    - name: symbol
+      in: path
+      description: The ticker of the requested index
+      required: true
+      schema:
+        type: string
   responses:
     '200':
       description: Success
