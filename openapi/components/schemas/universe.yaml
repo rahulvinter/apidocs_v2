@@ -8,8 +8,8 @@ x-examples:
       symbol: D1H_BTCUSD_DRR_MEAN
     data:
       - symbol: D1H_BTCUSD_DRR_MEAN
-        universe: {}
-description: The schema that is returned for an errod code
+        universe: {bitstamp: [btc-usd]}
+description: The schema that is returned at a successful request
 properties:
   result:
     description: success if response code is 200 otherwise error
