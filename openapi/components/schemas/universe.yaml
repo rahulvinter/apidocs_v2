@@ -8,7 +8,7 @@ x-examples:
       symbol: D1H_BTCUSD_DRR_MEAN
     data:
       - symbol: D1H_BTCUSD_DRR_MEAN
-        universe: {bitstamp: [btc-usd]}
+        universe: {bitstamp: [btc-usd], kraken: ['btc-usd']}
 description: The schema that is returned at a successful request
 properties:
   result:
