@@ -37,5 +37,5 @@ properties:
     type: array
     example:
       - symbol: D1H_BTCUSD_DRR_MEAN
-        value: 15000
+        universe: {bitstamp: [btc-usd], kraken: ['btc-usd']}
     items: {}
