@@ -14,7 +14,7 @@ info:
     url: 'https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco/ewbs0jxslmtxft2ihras'
   description: |
     # Introduction
-    This documentation describes Vinter Capital's API enpoints. An API key is       required for all endpoints and can be requested by sending an e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field.
+    This documentation describes Vinter Capital's API endpoints. An API key is       required for all endpoints and can be requested by sending an e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field.
       ```
       Authorization : Api-Key ********
       ```
@@ -37,18 +37,18 @@ tags:
     description: Information on active real-time indexes
   - name: Vinter Reference Index
     description: The vinter reference index endpoint
-  - name: Vinter Realtime Index
-    description: The vinter realtime index endpoint 
+  - name: Vinter Real-time Index
+    description: The vinter real-time index endpoint 
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
-  /real_time_index/:
-    $ref: paths/real_time_index.yaml
-  /reference_index/:
-    $ref: paths/reference_index.yaml
   /active_real_time_index/:
     $ref: paths/active_real_time_index.yaml
   /active_reference_index/:
     $ref: paths/active_reference_index.yaml
-  
+  /real_time_index/:
+    $ref: paths/real_time_index.yaml
+  /reference_index/:
+    $ref: paths/reference_index.yaml
+ 
   
