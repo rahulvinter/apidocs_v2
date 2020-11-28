@@ -1,6 +1,6 @@
 get:
   tags:
-    - Active Real-time Index
+    - Active Real-time Indexes
   summary: Get active Vinter reference indexes
   description: |
     This endpoint returns the current realtime indexes

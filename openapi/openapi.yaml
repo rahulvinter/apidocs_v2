@@ -35,9 +35,9 @@ tags:
     description: Information on active reference indexes
   - name: Active Real-time indexes
     description: Information on active real-time indexes
-  - name: Vinter Reference Index
+  - name: Vinter Reference Indexes
     description: The vinter reference index endpoint
-  - name: Vinter Real-time Index
+  - name: Vinter Real-time Indexes
     description: The vinter real-time index endpoint 
 servers:
   - url: 'https://vinterapi.com/api/v1'
