@@ -24,7 +24,16 @@ properties:
     example: Your API key is not valid
   data:
     description: List of obtained records
-    type: array
+    type: object
+    properties:
+      symbol:
+        type: string
+      contrib: 
+        type: array
+        items:
+          type: string
+      period:
+        type: integer
     example:
       symbol: D1H_BTCUSD_RR
       contrib: ["bitstamp", "kraken", "bitfinex"]
