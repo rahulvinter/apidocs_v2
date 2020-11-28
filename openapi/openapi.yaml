@@ -33,7 +33,7 @@ info:
 tags:
   - name: Active Reference Indexes
     description: Information on active reference indexes
-  - name: Active Real-time indexes
+  - name: Active Real-time Indexes
     description: Information on active real-time indexes
   - name: Vinter Reference Indexes
     description: The vinter reference index endpoint
