@@ -32,7 +32,16 @@ properties:
         type: string
   data:
     description: List of obtained records
-    type: array
+    type: object
+    properties:
+      symbol:
+        type: string
+      value: 
+        type: integer
+        items:
+          type: string
+      datetime:
+        type: string
     example:
       - symbol: D1H_BTCUSD_DRR_MEAN
         value: 15000
