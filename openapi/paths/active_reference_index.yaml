@@ -1,6 +1,6 @@
 get:
   tags:
-    - Active Real-time Index
+    - Active Reference Index
   summary: Get active Vinter reference indexes
   description: |
     This endpoint returns the current reference indexes
@@ -35,3 +35,4 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
+        

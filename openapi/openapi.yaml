@@ -31,8 +31,10 @@ info:
       ```
 
 tags:
-  - name: Vinter Universe
-    description: Information on eligible exchanges and constituents
+  - name: Active Reference Indexes
+    description: Information on active reference indexes
+  - name: Active Real-time indexes
+    description: Information on active real-time indexes
   - name: Vinter Reference Index
     description: The vinter reference index endpoint
   - name: Vinter Realtime Index
