@@ -1,14 +1,17 @@
-title: universe
+title: active_reference_index
 type: object
 x-examples:
   example:
     result: success
     message: Success
     params:
-      symbol: D1H_BTCUSD_DRR_MEAN
+      symbol: D1H_BTCUSD_DRR
     data:
-      - symbol: D1H_BTCUSD_DRR_MEAN
-        universe: {bitstamp: [btc-usd], kraken: ['btc-usd']}
+      symbol: D1H_BTCUSD_DRR
+      contrib: ["bitstamp", "kraken", "bitfinex"] 
+      calc_time: 16:00:00, 
+      period: 3600
+         
 description: The schema that is returned at a successful request
 properties:
   result:

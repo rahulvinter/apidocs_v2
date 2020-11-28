@@ -1,0 +1,5 @@
+title: active_real_time_index
+type: object
+properties:
+  id:
+    type: string

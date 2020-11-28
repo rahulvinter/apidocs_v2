@@ -3,14 +3,14 @@ get:
     - Active Real-time Index
   summary: Get active Vinter reference indexes
   description: |
-    This endpoint returns the current reference indexes
+    This endpoint returns the current realtime indexes
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/active_reference_index.yaml
+            $ref: ../components/schemas/active_real_time_index.yaml
     '400':
       description: Bad Request
       content:
