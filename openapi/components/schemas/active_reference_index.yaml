@@ -22,22 +22,12 @@ properties:
     description: result message
     type: string
     example: Your API key is not valid
-  params:
-    description: The parameters that were used in the request
-    type: object
-    additionalProperties:
-      type: string
-    example:
-      symbol: D1H_BTCUSD_DRR_MEAN
-    properties:
-      symbol:
-        type: string
-      value:
-        type: number
   data:
     description: List of obtained records
     type: array
     example:
-      - symbol: D1H_BTCUSD_DRR_MEAN
-        universe: {bitstamp: [btc-usd], kraken: ['btc-usd']}
+      symbol: D1H_BTCUSD_DRR
+      contrib: ["bitstamp", "kraken", "bitfinex"]
+      calc_time: 16:00:00
+      period: 3600
     items: {}
