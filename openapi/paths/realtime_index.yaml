@@ -1,8 +1,8 @@
 get:
   tags:
-    - Vinter Realtime Index
+    - Vinter Real-time Index
   summary: Get Vinter Realtime Indexes
-  description: This endpoint returns the last Vinter Realtime Index value.
+  description: This endpoint returns the last Vinter Real-time Index value.
   parameters:
     - name: symbol
       in: path
@@ -16,7 +16,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/realtime_index.yaml
+            $ref: ../components/schemas/real_time_index.yaml
     '400':
       description: Bad Request
       content:
