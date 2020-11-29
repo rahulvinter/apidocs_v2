@@ -5,9 +5,9 @@ x-examples:
     result: success
     message: Success
     params:
-      symbol: D1H_BTCUSD_RR
+      symbol: D1H_BTCUSD_RR_MEAN
     data:
-      symbol: D1H_BTCUSD_RR
+      symbol: D1H_BTCUSD_RR_MEAN
       contrib: ["bitstamp", "kraken", "bitfinex"] 
       calc_time: 16:00:00, 
       period: 3600
@@ -15,13 +15,13 @@ x-examples:
 description: The schema that is returned at a successful request
 properties:
   result:
-    description: success if response code is 200 otherwise error
+    description: Takes the value success for a 200 response
     type: string
     example: success
   message:
-    description: result message
+    description: Takes the value Success for a 200 response
     type: string
-    example: Your API key is not valid
+    example: Success
   data:
     description: List of obtained records
     type: object
@@ -35,7 +35,7 @@ properties:
       period:
         type: integer
     example:
-      symbol: D1H_BTCUSD_RR
+      symbol: D1H_BTCUSD_RR_MEAN
       contrib: ["bitstamp", "kraken", "bitfinex"]
       calc_time: 16:00:00
       period: 3600
