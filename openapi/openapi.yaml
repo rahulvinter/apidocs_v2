@@ -14,25 +14,25 @@ info:
     url: 'https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco/ewbs0jxslmtxft2ihras'
   description: |
     # Introduction
-    This documentation describes Vinter Capital's API endpoints. An API key is       required for all endpoints and can be requested by sending an e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field.
+    This documentation describes Vinter Capital's API endpoints. An API key is      required for The Vinter Reference Indexes and the Vinter Real-time Indexes      endpoints. An API key can be requested by sending an e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field.
       ```
       Authorization : Api-Key ********
       ```
-    In python this can be done using the request library
+    In Python this can be done using the request library
       ```
       import requests
       url = 'https://wwww.vinterapi.com/api/v1/vinter_universe/'
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
-    where the stars are your API key. The API can also be accessed vi curl by
+    where the stars are your API key. The API can also be accessed using curl
       ```
       curl -H "Authorization: *****" wwww.vinterapi.com/api/v1/vinter_universe/
       ```
 
 tags:
   - name: Active Reference Indexes
-    description: Information on active reference indexes
+    description: The active Reference Indexes endpoint returns information on all indexes as well as their symbol. This can then be used when requesting information using the Reference Indexes endpioint. 
   - name: Active Real-time Indexes
     description: Information on active real-time indexes
   - name: Vinter Reference Indexes
