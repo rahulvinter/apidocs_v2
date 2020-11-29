@@ -21,13 +21,13 @@ info:
     In Python this can be done using the request library
       ```
       import requests
-      url = 'https://wwww.vinterapi.com/api/v1/vinter_universe/'
+      url = 'https://wwww.vinterapi.com/api/v1/reference_indexes/'
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
     where the stars are your API key. The API can also be accessed using curl
       ```
-      curl -H "Authorization: *****" wwww.vinterapi.com/api/v1/vinter_universe/
+      curl -H "Authorization: *****" wwww.vinterapi.com/api/v1/reference_indexes/
       ```
 
 tags:
