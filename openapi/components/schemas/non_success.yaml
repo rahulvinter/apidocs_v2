@@ -3,19 +3,19 @@ type: object
 x-examples:
   example:
     result: error
-    message: Not a valid API key
+    message: Too Many Requests -- Rate limit exceeded
     params:
       symbol: D1H_BTCUSD_DRR_MEAN
     data: ''
 properties:
   result:
-    description: success if response code is 200 otherwise error
+    description: Takes the value error for all error messages
     type: string
     example: error
   message:
-    description: result message
+    description: Error message
     type: string
-    example: Your API key is not valid
+    example: Unknown error
   params:
     description: The parameters that were used in the request
     type: object
