@@ -21,7 +21,7 @@ info:
     In Python this can be done using the request library
       ```
       import requests
-      url = 'https://wwww.vinterapi.com/api/v1/reference_indexes/'
+      url = 'https://www.vinterapi.com/api/v1/reference_indexes/'
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
