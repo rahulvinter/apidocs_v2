@@ -38,7 +38,7 @@ tags:
   - name: Vinter Reference Indexes
     description: The Vinter Reference Indexes endpoint returns the latest value on a specific index
   - name: Vinter Real-time Indexes
-    description: The Vinter Realt-time Indexes endpoint returns the latest value on a specific index
+    description: The Vinter RealtReal-time Indexes endpoint returns the latest value on a specific index
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:

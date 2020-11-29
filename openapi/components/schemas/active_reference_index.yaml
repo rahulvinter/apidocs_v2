@@ -19,7 +19,7 @@ properties:
   message:
     description: result message
     type: string
-    example: Your API key is not valid
+    example: Success
   data:
     description: List of obtained records
     type: object
