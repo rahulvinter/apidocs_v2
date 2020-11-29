@@ -13,13 +13,13 @@ x-examples:
 description: The schema that is returned for an errod code
 properties:
   result:
-    description: success if response code is 200 otherwise error
+    description: Success if response code is 200 otherwise error
     type: string
     example: success
   message:
-    description: result message
+    description: Error message
     type: string
-    example: Your API key is not valid
+    example: Unknown error
   params:
     description: The parameters that were used in the request
     type: object
@@ -41,7 +41,7 @@ properties:
       datetime:
         type: string
     example:
-      symbol: D1H_BTCUSD_DRR
+      symbol: D1H_BTCUSD_DRR_MEAN
       value: 15000
       datetime: '2020-08-10T20:00:00.00Z'
     items: {}
