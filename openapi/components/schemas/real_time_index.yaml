@@ -23,13 +23,12 @@ properties:
   params:
     description: The parameters that were used in the request
     type: object
-    additionalProperties:
-      type: string
-    example:
-      symbol: D1H_BTCUSD_DRR_MEAN
     properties:
       symbol:
         type: string
+    example:
+      symbol: D1H_BTCUSD_DRR_MEAN
+    
   data:
     description: List of obtained records
     type: object
