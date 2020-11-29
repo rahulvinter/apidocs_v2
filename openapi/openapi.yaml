@@ -42,13 +42,13 @@ tags:
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
-  /active_real_time_index/:
-    $ref: paths/active_real_time_index.yaml
-  /active_reference_index/:
-    $ref: paths/active_reference_index.yaml
-  /real_time_index/:
-    $ref: paths/real_time_index.yaml
-  /reference_index/:
-    $ref: paths/reference_index.yaml
+  /active_real_time_indexes/:
+    $ref: paths/active_real_time_indexes.yaml
+  /active_reference_indexes/:
+    $ref: paths/active_reference_indexes.yaml
+  /real_time_indexes/:
+    $ref: paths/real_time_indexes.yaml
+  /reference_indexes/:
+    $ref: paths/reference_indexes.yaml
  
   
