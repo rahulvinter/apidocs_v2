@@ -10,10 +10,10 @@ x-examples:
       - symbol: D1H_BTCUSD_DRR_MEAN
         value: 15000
         datetime: '2020-08-10T20:00:00.00Z'
-description: The schema that is returned for an errod code
+description: The schema that is returned for a 200 response
 properties:
   result:
-    description: Success if response code is 200 otherwise error
+    description: Takes the value success for a 200 response
     type: string
     example: success
   message:
