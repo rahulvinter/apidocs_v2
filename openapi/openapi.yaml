@@ -32,13 +32,13 @@ info:
 
 tags:
   - name: Active Reference Indexes
-    description: The active Reference Indexes endpoint returns information on all indexes as well as their symbol. This can then be used when requesting information using the Reference Indexes endpioint. 
+    description: The Active Reference Indexes endpoint returns information on all indexes as well as their symbols. This can then be used for requesting information on a specific index using the Vinter Reference Indexes endpoint. 
   - name: Active Real-time Indexes
-    description: Information on active real-time indexes
+    description: The Active Real-time Indexes endpoint returns information on all indexes as well as their symbols. This can then be used for requesting information on a specific index using the Vinter Real-time Indexes endpiont. 
   - name: Vinter Reference Indexes
-    description: The vinter reference index endpoint
+    description: The Vinter Reference Indexes endpoint returns the latest value on a specific index
   - name: Vinter Real-time Indexes
-    description: The vinter real-time index endpoint 
+    description: The Vinter Realt-time Indexes endpoint returns the latest value on a specific index
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
