@@ -27,7 +27,7 @@ info:
       ```
     where the stars are your API key. The API can also be accessed using curl
       ```
-      curl -H "Authorization: Api-Key *****"  https://wwww.vinterapi.com/api/v1/reference_indexes/
+      curl -H "Authorization: *****"  https://wwww.vinterapi.com/api/v1/reference_indexes/
       ```
 
 tags:
