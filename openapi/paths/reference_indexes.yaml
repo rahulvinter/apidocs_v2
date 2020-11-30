@@ -2,7 +2,7 @@ get:
   tags:
     - Vinter Reference Indexes
   summary: Get latest Vinter Reference Index value
-  description: This endpoint returns the last Vinter Reference Index value.
+  description: This endpoint returns the latest Vinter Reference Index value.
   parameters:
     - name: symbol
       in: path

@@ -2,7 +2,7 @@ get:
   tags:
     - Vinter Real-time Indexes
   summary: Get the latest Vinter Real-time Index value
-  description: This endpoint returns the last Vinter Real-time Index value.
+  description: This endpoint returns the latest Vinter Real-time Index value.
   parameters:
     - name: symbol
       in: path
