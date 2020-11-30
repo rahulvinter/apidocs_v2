@@ -47,6 +47,7 @@ tags:
     description: The Vinter Real-time Indexes endpoint returns the latest value on a specific real-time index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url**
      ```
      https://www.vinterapi.com/api/v1/reference_indexes/?symbol=D1H_XRPUSD_RR_MEAN
+     ```
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
