@@ -17,9 +17,9 @@ properties:
     type: string
     example: success
   message:
-    description: Error message
+    description: Response message
     type: string
-    example: Unknown error
+    example: Success
   params:
     description: The parameters that were used in the request
     type: object
