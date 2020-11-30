@@ -38,8 +38,6 @@ properties:
       value:
         description: The index value 
         type: number
-        items:
-          type: string 
       datetime:
         description: The calculation time for the index value (ISO 8601 format)
         type: string

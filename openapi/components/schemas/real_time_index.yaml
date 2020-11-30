@@ -34,12 +34,13 @@ properties:
     type: object
     properties:
       symbol:
+        description: The index symbol
         type: string
       value: 
-        type: integer
-        items:
-          type: string
+        description: The index value 
+        type: number
       datetime:
+        description: The calculation time for the index value (ISO 8601 format)
         type: string
     example:
       - symbol: BTCUSD_RR_MEAN
