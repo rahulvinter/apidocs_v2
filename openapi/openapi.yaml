@@ -34,7 +34,10 @@ tags:
      https://www.vinterapi.com/api/v1/active_reference_indexes/
      ```  
   - name: Active Real-time Indexes
-    description: The Active Real-time Indexes endpoint returns information on all indexes as well as their symbols. This can then be used for requesting information on a specific index using the Vinter Real-time Indexes endpiont. 
+    description: The Active Reference Indexes endpoint returns information on       all indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
+     ```
+     https://www.vinterapi.com/api/v1/active_real_time_indexes/
+     ```  
   - name: Vinter Reference Indexes
     description: The Vinter Reference Indexes endpoint returns the latest value on a specific index
   - name: Vinter Real-time Indexes
