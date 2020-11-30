@@ -1,9 +1,9 @@
 get:
   tags:
     - Active Real-time Indexes
-  summary: Get active Vinter reference indexes
+  summary: Get active Vinter real-time indexes
   description: |
-    This endpoint returns the current realtime indexes
+    This endpoint returns the current real-time indexes
   responses:
     '200':
       description: Success
