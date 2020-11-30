@@ -25,6 +25,7 @@ properties:
     type: object
     properties:
       symbol:
+        description: The ticker of the requested index
         type: string
     example:
       symbol: BTCUSD_RR_MEAN
