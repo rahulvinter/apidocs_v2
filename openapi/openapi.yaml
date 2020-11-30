@@ -29,12 +29,12 @@ info:
 
 tags:
   - name: Active Reference Indexes
-    description: The Active Reference Indexes endpoint returns information on       all indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
+    description: The Active Reference Indexes endpoint returns information on       all reference indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
      ```
      https://www.vinterapi.com/api/v1/active_reference_indexes/
      ```  
   - name: Active Real-time Indexes
-    description: The Active Reference Indexes endpoint returns information on       all indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
+    description: The Active Real-time Indexes endpoint returns information on       all real-time indexes as well as their symbols. The information can be used to specify the symbol parameter for Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
      ```
      https://www.vinterapi.com/api/v1/active_real_time_indexes/
      ```  
