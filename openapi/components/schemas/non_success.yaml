@@ -19,16 +19,9 @@ properties:
   params:
     description: The parameters that were used in the request
     type: object
-    additionalProperties:
-      type: string
     example:
       symbol: D1H_BTCUSD_DRR_MEAN
       since: '2020-08-10T20:00:00.00Z'
-    properties:
-      symbol:
-        type: string
-      value:
-        type: number
   data:
     description: Empty string
     type: string
