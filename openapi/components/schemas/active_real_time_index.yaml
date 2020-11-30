@@ -27,12 +27,13 @@ properties:
     type: object
     properties:
       symbol:
+        description: The index symbol
         type: string
-      contrib: 
+      contrib:
+        description: Contributing exchanges 
         type: array
-        items:
-          type: string
       period:
+        description: The length of the calculation period in seconds
         type: integer
     example:
       symbol: D1H_BTCUSD_RR_MEAN
