@@ -1,7 +1,7 @@
 get:
   tags:
     - Vinter Real-time Indexes
-  summary: Get Vinter Real-time Indexes
+  summary: Vinter Real-time Indexes
   description: This endpoint returns the last Vinter Real-time Index value.
   parameters:
     - name: symbol
