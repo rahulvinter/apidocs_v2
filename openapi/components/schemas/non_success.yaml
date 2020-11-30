@@ -21,7 +21,6 @@ properties:
     type: object
     example:
       symbol: D1H_BTCUSD_DRR_MEAN
-      since: '2020-08-10T20:00:00.00Z'
   data:
     description: Empty string
     type: string
