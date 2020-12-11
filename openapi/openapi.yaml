@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   version: 1.0.0
-  title: Welcome to The Vinter APIs
+  title: 'Welcome to The Vinter APIs :)'
   termsOfService: 'https://vinterapi.com/terms/'
   contact:
     email: contact@vinter.capital
@@ -26,28 +26,15 @@ info:
       ```
       curl -H "Authorization: *****"  https://www.vinterapi.com/api/v1/reference_indexes/
       ```
-
 tags:
   - name: Active Reference Indexes
-    description: The Active Reference Indexes endpoint returns information on       all reference indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
-     ```
-     https://www.vinterapi.com/api/v1/active_reference_indexes/
-     ```  
+    description: 'The Active Reference Indexes endpoint returns information on       all reference indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v1/active_reference_indexes/ ```'
   - name: Active Real-time Indexes
-    description: The Active Real-time Indexes endpoint returns information on       all real-time indexes as well as their symbols. The information can be used to specify the symbol parameter for the Vinter Real-time Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url**
-     ```
-     https://www.vinterapi.com/api/v1/active_real_time_indexes/
-     ```  
+    description: 'The Active Real-time Indexes endpoint returns information on       all real-time indexes as well as their symbols. The information can be used to specify the symbol parameter for the Vinter Real-time Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v1/active_real_time_indexes/ ```'
   - name: Vinter Reference Indexes
-    description: The Vinter Reference Indexes endpoint returns the latest value for a specific reference index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url**
-     ```
-     https://www.vinterapi.com/api/v1/reference_indexes/?symbol=D1H_XRPUSD_DRR_MEAN
-     ```  
+    description: 'The Vinter Reference Indexes endpoint returns the latest value for a specific reference index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=D1H_XRPUSD_DRR_MEAN ```'
   - name: Vinter Real-time Indexes
-    description: The Vinter Real-time Indexes endpoint returns the latest value on a specific real-time index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url**
-     ```
-     https://www.vinterapi.com/api/v1/real_time_indexes/?symbol=XRPUSD_RR_MEAN
-     ```
+    description: 'The Vinter Real-time Indexes endpoint returns the latest value on a specific real-time index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/real_time_indexes/?symbol=XRPUSD_RR_MEAN ```'
 servers:
   - url: 'https://vinterapi.com/api/v1'
 paths:
@@ -59,5 +46,3 @@ paths:
     $ref: paths/real_time_indexes.yaml
   /reference_indexes/:
     $ref: paths/reference_indexes.yaml
- 
-  
