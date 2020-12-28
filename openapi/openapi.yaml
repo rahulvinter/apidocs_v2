@@ -11,7 +11,7 @@ info:
     name: 'Proprietary '
     url: www.vinter.capital
   x-logo:
-    url: 'https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco/ewbs0jxslmtxft2ihras'
+    url: 'https://i.postimg.cc/k4BTqkF5/vinter2020.png'
   description: |
     # Introduction
     This documentation describes Vinter Capital's API endpoints. An API key is      required for The Vinter Reference Indexes and the Vinter Real-time Indexes      endpoints. An API key can be requested by sending an e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field.
