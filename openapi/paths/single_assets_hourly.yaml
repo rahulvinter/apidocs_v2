@@ -1,0 +1,43 @@
+get:
+  tags:
+    - Single assets hourly
+  summary: Get Single assets hourly index values
+  description: This endpoint returns values for indexes assets indexes, calculated on an hourly basis.
+  parameters:
+    - name: symbol
+      in: path
+      description: The ticker of the requested index
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/single_assets_hourly.yaml
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '401':
+      description: Unauthorized 
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '429':
+      description: Too Many Requests
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '500':
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
