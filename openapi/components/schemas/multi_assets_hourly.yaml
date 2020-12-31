@@ -1,0 +1,49 @@
+title: multi_assets_hourly
+type: object
+x-examples:
+  example:
+    result: success
+    message: Success
+    params:
+      symbol: bold-h
+    data:
+      - symbol: bold-h
+        value: 1112
+        datetime: '2020-08-10T20:00:00.00Z'
+description: The schema that is returned for a 200 response
+properties:
+  result:
+    description: Takes the value success for a 200 response
+    type: string
+    example: success
+  message:
+    description: Response message
+    type: string
+    example: Success
+  params:
+    description: The parameters that were used in the request
+    type: object
+    properties:
+      symbol:
+        description: The ticker of the requested index
+        type: string
+    example:
+      symbol: bold-h
+  data:
+    description: List of obtained records
+    type: object
+    properties:
+      symbol:
+        description: The index symbol
+        type: string
+      value:
+        description: The index value 
+        type: number
+      datetime:
+        description: The calculation time for the index value (ISO 8601 format)
+        type: string
+    example:
+      symbol: bold-h
+      value: 1112
+      datetime: '2020-08-10T20:00:00.00Z'
+    items: {}

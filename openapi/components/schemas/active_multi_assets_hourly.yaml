@@ -1,13 +1,13 @@
-title: active_single_assets_hourly
+title: active_multi_assets_hourly
 type: object
 x-examples:
   example:
     result: success
     message: Success
     data:
-      symbol: xlm-usd-p-h
-      contrib: ["bitstamp", "kraken", "bitfinex"]  
-      period: 3600
+      symbol: vntr-gold-h
+      composition: {"btc-usd-p-h": 0.8, "aux-usd-p-h": 0.2}  
+      precision: 2
          
 description: The schema that is returned at a successful request
 properties:
@@ -26,14 +26,15 @@ properties:
       symbol:
         description: The index symbol
         type: string
-      contrib: 
-        description: Contributing exchanges
-        type: array
-      period:
-        description: The length of the calculation period in seconds
-        type: integer
+      composition: 
+        description: Constituents and weights
+        type: object
+        additionalProperties:
+          type: number
+      precision:
+        description: The precision of the index
     example:
-      symbol: xlm-usd-p-h
-      contrib: ["bitstamp", "kraken", "bitfinex"]
-      period: 3600
+      symbol: vntr-gold-h
+      composition: {"btc-usd-p-h": 0.8, "xau-usd-p-h": 0.2}  
+      precision: 2
     items: {}

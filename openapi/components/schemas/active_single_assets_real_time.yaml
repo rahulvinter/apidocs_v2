@@ -9,7 +9,6 @@ x-examples:
     data:
       symbol: btc-usd-p-r
       contrib: ["bitstamp", "kraken", "bitfinex"] 
-      precision: 2, 
       period: 60
          
 description: The schema that is returned at a successful request
