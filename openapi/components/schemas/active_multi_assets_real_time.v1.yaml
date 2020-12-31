@@ -1,0 +1,43 @@
+title: active_multi_assets_real_time
+type: object
+x-examples:
+  example:
+    result: success
+    message: Success
+    data:
+      symbol: vntr-gold-r
+      composition: {"btc-usd-p-r": 0.8, "aux-usd-p-r": 0.2}  
+      precision: 2
+         
+description: The schema that is returned at a successful request
+properties:
+  result:
+    description: success if response code is 200 otherwise error
+    type: string
+    example: success
+  message:
+    description: result message
+    type: string
+    example: Success
+  data:
+    description: List of obtained records
+    type: object
+    properties:
+      symbol:
+        description: The index symbol
+        type: string
+      composition: 
+        description: Constituents and weights
+        type: object
+        additionalProperties:
+          type: number
+      precision:
+        description: The precision of the index
+      calc_time:
+        description: the time when the value was calculated (UTC)
+        type: string
+    example:
+      symbol: vntr-gold-r
+      composition: {"btc-usd-p-r": 0.8, "aux-usd-p-r": 0.2}  
+      precision: 2
+    items: {}
