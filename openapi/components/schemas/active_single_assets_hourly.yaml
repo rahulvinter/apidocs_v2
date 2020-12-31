@@ -1,13 +1,12 @@
-title: active_reference_index
+title: active_single_assets_hourly
 type: object
 x-examples:
   example:
     result: success
     message: Success
     data:
-      symbol: D1H_BTCUSD_DRR
-      contrib: ["bitstamp", "kraken", "bitfinex"] 
-      calc_time: 16:00:00 
+      symbol: xlm-usd-p-h
+      contrib: ["bitstamp", "kraken", "bitfinex"]  
       period: 3600
          
 description: The schema that is returned at a successful request
@@ -34,11 +33,10 @@ properties:
         description: The length of the calculation period in seconds
         type: integer
       calc_time:
-        description: The end of the calculation period (UTC)
+        description: the time when the value was calculated (UTC)
         type: string
     example:
-      symbol: D1H_BTCUSD_DRR
+      symbol: xlm-usd-p-h
       contrib: ["bitstamp", "kraken", "bitfinex"]
-      calc_time: 16:00:00
       period: 3600
     items: {}
