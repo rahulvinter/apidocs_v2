@@ -33,9 +33,6 @@ properties:
           type: number
       precision:
         description: The precision of the index
-      calc_time:
-        description: the time when the value was calculated (UTC)
-        type: string
     example:
       symbol: vntr-gold-r
       composition: {"btc-usd-p-r": 0.8, "aux-usd-p-r": 0.2}  
