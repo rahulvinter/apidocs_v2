@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  version: 1.0.0
+  version: 2.0.0
   title: 'Welcome to The Vinter APIs'
   termsOfService: 'https://vinterapi.com/terms/'
   contact:
@@ -9,27 +9,27 @@ info:
     name: contact
   license:
     name: 'Proprietary '
-    url: www.vinter.capital
+    url: www.vinter.co
   x-logo:
     url: 'https://i.postimg.cc/7Y3fY9V1/vinterlogomedpadding.png'
   description: |
     # Introduction
-    This documentation describes Vinter Capital's API endpoints. An API key is      required for The Vinter Reference Indexes and the Vinter Real-time Indexes      endpoints. An API key can be requested by sending an e-mail to          contact@vinter.capital. The API key should be placed in the headers             authorization field.
+    This documentation describes Vinter Capital's API endpoints. An API key is      required for all endpoints. An API key can be requested by sending an e-mail to contact@vinter.co. The API key should be placed in the headers             authorization field.
     In Python this can be done using the request library
       ```
       import requests
-      url = 'https://www.vinterapi.com/api/v1/reference_indexes/'
+      url = 'https://www.vinterapi.com/api/v2/single_assets_hourly/'
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
     where the stars are your API key. The API can also be accessed using curl
       ```
-      curl -H "Authorization: *****"  https://www.vinterapi.com/api/v1/reference_indexes/
+      curl -H "Authorization: *****"  https://www.vinterapi.com/api/v1/single_assets_hourly/
       ```
 tags:
-  - name: Active Reference Indexes
-    description: 'The Active Reference Indexes endpoint returns information on       all reference indexes as well as their symbols. This can then be used for requesting      information on a specific index using the Vinter Reference Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v1/active_reference_indexes/ ```'
-  - name: Active Real-time Indexes
+  - name: Active multi assets real-time
+    description: 'The active multi assets real rime endpoint returns information on all multi assets indexes that are calculated on an hourly basis. These indexes also constitutes the daily single assets indexes that Vinter calculatea. The endpoint returns the index symbols taht you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_multi_assets_hourly/ ```'
+  - name: Active single assets real-time
     description: 'The Active Real-time Indexes endpoint returns information on       all real-time indexes as well as their symbols. The information can be used to specify the symbol parameter for the Vinter Real-time Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v1/active_real_time_indexes/ ```'
   - name: Vinter Reference Indexes
     description: 'The Vinter Reference Indexes endpoint returns the latest value for a specific reference index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=D1H_XRPUSD_DRR_MEAN ```'
