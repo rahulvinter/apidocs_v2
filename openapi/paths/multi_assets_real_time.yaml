@@ -1,16 +1,22 @@
 get:
   tags:
-    - Active Real-time Indexes
-  summary: Get active Vinter real-time indexes
-  description: |
-    This endpoint returns information for the current real-time indexes
+    - Multi assets real-time
+  summary: Get Multi assets real-time index values
+  description: This endpoint returns values for multi assets indexes, calculated on an continuous basis.
+  parameters:
+    - name: symbol
+      in: path
+      description: The ticker of the requested index
+      required: true
+      schema:
+        type: string
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/active_real_time_index.yaml
+            $ref: ../components/schemas/multi_assets_real_time.yaml
     '400':
       description: Bad Request
       content:
@@ -35,3 +41,4 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
+        

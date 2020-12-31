@@ -1,22 +1,16 @@
 get:
   tags:
-    - Vinter Real-time Indexes
-  summary: Get the latest Vinter Real-time Index value
-  description: This endpoint returns the latest Vinter Real-time Index value.
-  parameters:
-    - name: symbol
-      in: path
-      description: The ticker of the requested index
-      required: true
-      schema:
-        type: string
+    - Active single assets hourly
+  summary: Get active single assets hourly indexes
+  description: |
+    This endpoint returns information for the current single assets hourly indexes
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/real_time_index.yaml
+            $ref: ../components/schemas/active_single_assets_hourly.yaml
     '400':
       description: Bad Request
       content:
@@ -41,4 +35,3 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
-        

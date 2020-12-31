@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   version: 2.0.0
-  title: 'Welcome to The Vinter APIs'
+  title: Welcome to The Vinter APIs
   termsOfService: 'https://vinterapi.com/terms/'
   contact:
     email: contact@vinter.capital
@@ -35,9 +35,6 @@ tags:
     description: 'The active single assets hourly endpoint returns information on all single assets indexes that are calculated on an hourly basis. These indexes also constitutes the daily single assets indexes that Vinter calculates. The endpoint returns the index symbols that you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_single_assets_hourly/ ```'
   - name: Active single assets real-time
     description: 'The active single assets real-time endpoint returns information on all single assets indexes that are calculated on a continuous basis. The endpoint returns the index symbols that you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_single_assets_real_time/ ```'
-
-
- 
   - name: Multi assets hourly
     description: 'The multi assets hourly endpoint returns values for a specific multi asset index that is calculated on an hourly basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=vntr-5eq-h ```'
   - name: Multi assets real-time
@@ -46,8 +43,6 @@ tags:
     description: 'The single assets hourly endpoint returns values for a specific single asset index that is calculated on an hourly basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=btc-usd-p-h ```'
   - name: Single assets real-time
     description: 'The single assets real-time endpoint returns values on a specific single asset index that is calculated on a continuous basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/real_time_indexes/?symbol=btc-usd-p-r ```'
-
-
 servers:
   - url: 'https://vinterapi.com/api/v2'
 paths:
@@ -56,15 +51,14 @@ paths:
   /active_multi_assets_real_time/:
     $ref: paths/active_multi_assets_real_time.yaml
   /active_single_assets_hourly/:
-    $ref: paths/active_single_assets_real_time.yaml
-  /active_single_assets_hourly/:
     $ref: paths/active_single_assets_hourly.yaml
+  /active_single_assets_real_time/:
+    $ref: paths/active_single_assets_real_time.yaml
   /multi_assets_hourly/:
     $ref: paths/multi_assets_hourly.yaml
   /multi_assets_real_time/:
     $ref: paths/multi_assets_real_time.yaml
-  /single-assets_hourly/:
+  /single_assets_hourly/:
     $ref: paths/single_assets_hourly.yaml
   /single_assets_real_time/:
     $ref: paths/single_assets_real_time.yaml
-

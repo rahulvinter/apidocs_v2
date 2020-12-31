@@ -1,16 +1,22 @@
 get:
   tags:
-    - Active Reference Indexes
-  summary: Get active Vinter reference indexes
-  description: |
-    This endpoint returns information for the current reference indexes
+    - Multi assets hourly
+  summary: Get Multi assets hourly index values
+  description: This endpoint returns values for multi assets indexes, calculated on an hourly basis.
+  parameters:
+    - name: symbol
+      in: path
+      description: The ticker of the requested index
+      required: true
+      schema:
+        type: string
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/active_reference_index.yaml
+            $ref: ../components/schemas/multi_assets_hourly.yaml
     '400':
       description: Bad Request
       content:

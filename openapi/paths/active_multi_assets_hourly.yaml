@@ -1,22 +1,17 @@
+
 get:
   tags:
-    - Vinter Reference Indexes
-  summary: Get latest Vinter Reference Index value
-  description: This endpoint returns the latest Vinter Reference Index value.
-  parameters:
-    - name: symbol
-      in: path
-      description: The ticker of the requested index
-      required: true
-      schema:
-        type: string
+    - Active multi assets hourly
+  summary: Get active multi assets hourly indexes
+  description: |
+    This endpoint returns information for the current multi assets hourly indexes
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/reference_index.yaml
+            $ref: ../components/schemas/active_multi_assets_hourly.yaml
     '400':
       description: Bad Request
       content:
@@ -41,4 +36,3 @@ get:
         application/json:
           schema:
             $ref: ../components/schemas/non_success.yaml
-        
