@@ -27,22 +27,44 @@ info:
       curl -H "Authorization: *****"  https://www.vinterapi.com/api/v1/single_assets_hourly/
       ```
 tags:
+  - name: Active multi assets hourly
+    description: 'The active multi assets hourly endpoint returns information on all multi assets indexes that are calculated on an hourly basis. These indexes also constitutes the daily multi assets indexes that Vinter calculates. The endpoint returns the index symbols that you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_multi_assets_hourly/ ```'
   - name: Active multi assets real-time
-    description: 'The active multi assets real rime endpoint returns information on all multi assets indexes that are calculated on an hourly basis. These indexes also constitutes the daily single assets indexes that Vinter calculatea. The endpoint returns the index symbols taht you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_multi_assets_hourly/ ```'
+    description: 'The active multi assets real-time endpoint returns information on all multi assets indexes that are calculated on a continuous basis. The endpoint returns the index symbols that you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_multi_assets_real_time/ ```'
+  - name: Active single assets hourly
+    description: 'The active single assets hourly endpoint returns information on all single assets indexes that are calculated on an hourly basis. These indexes also constitutes the daily single assets indexes that Vinter calculates. The endpoint returns the index symbols that you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_single_assets_hourly/ ```'
   - name: Active single assets real-time
-    description: 'The Active Real-time Indexes endpoint returns information on       all real-time indexes as well as their symbols. The information can be used to specify the symbol parameter for the Vinter Real-time Indexes             endpoint. The endpoint does not require an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v1/active_real_time_indexes/ ```'
-  - name: Vinter Reference Indexes
-    description: 'The Vinter Reference Indexes endpoint returns the latest value for a specific reference index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=D1H_XRPUSD_DRR_MEAN ```'
-  - name: Vinter Real-time Indexes
-    description: 'The Vinter Real-time Indexes endpoint returns the latest value on a specific real-time index. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/real_time_indexes/?symbol=XRPUSD_RR_MEAN ```'
+    description: 'The active single assets real-time endpoint returns information on all single assets indexes that are calculated on a continuous basis. The endpoint returns the index symbols that you can use when you query other endpoints. The endpoint requires an API key and does not accept any      parameters. **Example url** ``` https://www.vinterapi.com/api/v2/active_single_assets_real_time/ ```'
+
+
+ 
+  - name: Multi assets hourly
+    description: 'The multi assets hourly endpoint returns values for a specific multi asset index that is calculated on an hourly basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=vntr-5eq-h ```'
+  - name: Multi assets real-time
+    description: 'The multi assets real-time endpoint returns values on a specific multi asset index that is calculated on a continuous basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/real_time_indexes/?symbol=vntr-5eq-r ```'
+  - name: Single assets hourly
+    description: 'The single assets hourly endpoint returns values for a specific single asset index that is calculated on an hourly basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/reference_indexes/?symbol=btc-usd-p-h ```'
+  - name: Single assets real-time
+    description: 'The single assets real-time endpoint returns values on a specific single asset index that is calculated on a continuous basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example url** ``` https://www.vinterapi.com/api/v1/real_time_indexes/?symbol=btc-usd-p-r ```'
+
+
 servers:
-  - url: 'https://vinterapi.com/api/v1'
+  - url: 'https://vinterapi.com/api/v2'
 paths:
-  /active_real_time_indexes/:
-    $ref: paths/active_real_time_indexes.yaml
-  /active_reference_indexes/:
-    $ref: paths/active_reference_indexes.yaml
-  /real_time_indexes/:
-    $ref: paths/real_time_indexes.yaml
-  /reference_indexes/:
-    $ref: paths/reference_indexes.yaml
+  /active_multi_assets_hourly/:
+    $ref: paths/active_multi_assets_hourly.yaml
+  /active_multi_assets_real_time/:
+    $ref: paths/active_multi_assets_real_time.yaml
+  /active_single_assets_hourly/:
+    $ref: paths/active_single_assets_real_time.yaml
+  /active_single_assets_hourly/:
+    $ref: paths/active_single_assets_hourly.yaml
+  /multi_assets_hourly/:
+    $ref: paths/multi_assets_hourly.yaml
+  /multi_assets_real_time/:
+    $ref: paths/multi_assets_real_time.yaml
+  /single-assets_hourly/:
+    $ref: paths/single_assets_hourly.yaml
+  /single_assets_real_time/:
+    $ref: paths/single_assets_real_time.yaml
+
