@@ -10,7 +10,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/active_reference_index.yaml
+            $ref: ../components/schemas/multi_assets_real_time.yaml
     '400':
       description: Bad Request
       content:
