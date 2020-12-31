@@ -7,7 +7,6 @@ x-examples:
     data:
       symbol: vntr-gold-h
       composition: {"btc-usd-p-h": 0.8, "aux-usd-p-h": 0.2}  
-      precision: 2
          
 description: The schema that is returned at a successful request
 properties:
@@ -31,10 +30,7 @@ properties:
         type: object
         additionalProperties:
           type: number
-      precision:
-        description: The precision of the index
     example:
       symbol: vntr-gold-h
       composition: {"btc-usd-p-h": 0.8, "xau-usd-p-h": 0.2}  
-      precision: 2
     items: {}
