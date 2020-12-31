@@ -5,7 +5,7 @@ x-examples:
     result: error
     message: Too Many Requests -- Rate limit exceeded
     params:
-      symbol: D1H_BTCUSD_DRR_MEAN
+      symbol: btc-usd-p-r
     data: ''
 properties:
   result:
@@ -20,7 +20,7 @@ properties:
     description: The parameters that were used in the request
     type: object
     example:
-      symbol: D1H_BTCUSD_DRR_MEAN
+      symbol: btc-usd-p-r
   data:
     description: Empty string
     type: string
