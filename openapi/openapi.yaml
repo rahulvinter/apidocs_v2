@@ -14,15 +14,17 @@ info:
     url: 'https://i.postimg.cc/7Y3fY9V1/vinterlogomedpadding.png'
   description: |
     # Introduction
-    This documentation describes Vinter Capital's API endpoints. An API key is      required for all endpoints. An API key can be requested by sending an e-mail to contact@vinter.co. The API key should be placed in the headers             authorization field.
-    In Python this can be done using the request library
+    This documentation describes Vinter Capital's API endpoints. The endpoints offer access to all Vinter indexes. All endpoints require an API key and can be requested by sending an e-mail to contact@vinter.co. The API key should be placed in the headers             authorization field.
+    In Python this can be done using the request library using the below code snippet.
       ```
       import requests
       url = 'https://www.vinterapi.com/api/v2/single_assets_hourly/'
       headers = {'Authorization': *****}
       r = requests.get(url, headers=headers)
       ```
-    where the stars are your API key. The API can also be accessed using curl
+
+    where the stars are your API key. If you are not using python, here is a curl command that you can use to try out th *single assets hourly* API
+
       ```
       curl -H "Authorization: *****"  https://www.vinterapi.com/api/v1/single_assets_hourly/
       ```
@@ -62,3 +64,9 @@ paths:
     $ref: paths/single_assets_hourly.yaml
   /single_assets_real_time/:
     $ref: paths/single_assets_real_time.yaml
+components:
+  securitySchemes:
+    Authorization:
+      name: API Key
+      type: apiKey
+      in: header
