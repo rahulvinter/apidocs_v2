@@ -26,7 +26,7 @@ info:
     where the stars are your API key. If you are not using python, here is a curl command that you can use to try out th *single assets hourly* API
 
       ```
-      curl -H "Authorization: *****"  https://www.vinterapi.com/api/v1/single_assets_hourly/
+      curl -H "Authorization: *****"  https://www.vinterapi.com/api/v2/single_assets_hourly/
       ```
 tags:
   - name: Active multi assets hourly

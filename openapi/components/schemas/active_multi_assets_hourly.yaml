@@ -6,8 +6,9 @@ x-examples:
     message: Success
     data:
       symbol: vntr-gold-h
-      composition: {"btc-usd-p-h": 0.8, "aux-usd-p-h": 0.2}  
-         
+      composition:
+        btc-usd-p-h: 0.8
+        aux-usd-p-h: 0.2
 description: The schema that is returned at a successful request
 properties:
   result:
@@ -21,16 +22,24 @@ properties:
   data:
     description: List of obtained records
     type: object
+    example:
+      symbol: vntr-gold-h
+      composition:
+        btc-usd-p-h: 0.8
+        xau-usd-p-h: 0.2
     properties:
       symbol:
         description: The index symbol
         type: string
-      composition: 
+      composition:
         description: Constituents and weights
         type: object
         additionalProperties:
           type: number
-    example:
-      symbol: vntr-gold-h
-      composition: {"btc-usd-p-h": 0.8, "xau-usd-p-h": 0.2}  
-    items: {}
+        properties:
+          symbol:
+            type: string
+          '':
+            type: string
+      '':
+        type: string
