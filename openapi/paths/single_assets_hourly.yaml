@@ -2,8 +2,7 @@ get:
   tags:
     - Single assets hourly
   summary: Get Single assets hourly index values
-  description: This endpoint returns values for indexes assets indexes, calculated on an hourly basis.
-  The returned fields are
+  description: This endpoint returns values for indexes assets indexes, calculated on an hourly basis. The returned fields are
     - **created_at (string):**
       - ISO formatted datetime representing when the record was registered at           the API server.
     - **timestamp (number):** 

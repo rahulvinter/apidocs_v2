@@ -2,8 +2,7 @@ get:
   tags:
     - Multi assets real-time
   summary: Get Multi assets real-time index values
-  description: This endpoint returns values for multi assets indexes, calculated on an continuous basis.
-  The returned fields are
+  description: This endpoint returns values for multi assets indexes, calculated on an continuous basis. The returned fields are
     - **created_at (string):**
       - ISO formatted datetime representing when the record was registered at           the API server.
     - **timestamp (number):** 
