@@ -5,7 +5,7 @@ x-examples:
     result: success
     message: Success
     data:
-      symbol: vntr-gold-r
+      symbol: vnby-bold-r
       composition: {"btc-usd-p-r": 0.8, "aux-usd-p-r": 0.2}  
          
 description: The schema that is returned at a successful request
@@ -31,6 +31,6 @@ properties:
         additionalProperties:
           type: number
     example:
-      symbol: vntr-gold-r
+      symbol: vnby-bold-r
       composition: {"btc-usd-p-r": 0.8, "aux-usd-p-r": 0.2}  
     items: {}
