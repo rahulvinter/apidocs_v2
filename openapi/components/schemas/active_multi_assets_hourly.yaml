@@ -5,7 +5,7 @@ x-examples:
     result: success
     message: Success
     data:
-      symbol: vnby-bold-h
+      symbol: vnby-bold1-h
       composition:
         btc-usd-p-h: 0.8
         aux-usd-p-h: 0.2
@@ -23,7 +23,7 @@ properties:
     description: List of obtained records
     type: object
     example:
-      symbol: vnby-bold-h
+      symbol: vnby-bold1-h
       composition:
         btc-usd-p-h: 0.8
         xau-usd-p-h: 0.2
