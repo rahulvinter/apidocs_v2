@@ -3,6 +3,16 @@ get:
     - Single assets hourly
   summary: Get Single assets hourly index values
   description: This endpoint returns values for indexes assets indexes, calculated on an hourly basis.
+  The returned fields are
+    - **created_at (string):**
+      - ISO formatted datetime representing when the record was registered at           the API server.
+    - **timestamp (number):** 
+      - Unix timestamp in milliseconds representing when the record was registered at the API server.
+    - **value (number):**
+      - The index value
+    - **source_id:**
+      - The records id in the index server, can be used to request external   validation.
+      
   parameters:
     - name: symbol
       in: path
