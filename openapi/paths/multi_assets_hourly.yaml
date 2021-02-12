@@ -13,7 +13,7 @@ get:
     - **value (number):**
       - The index value
   
-    -  **source_id:**
+    -  **source_id (number):**
       - The records id in the index server, can be used to request external   validation.
       
   parameters:
