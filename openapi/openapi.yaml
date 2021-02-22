@@ -17,7 +17,7 @@ info:
     This documentation describes Vinter's API endpoints. The endpoints offer access to all Vinter indexes. All endpoints require an API key. You can request an API key by sending an e-mail to contact@vinter.co. The API key should be placed in the headers authorization field.
     In Python this can be done with the request library using the below code snippet.
       ```
-    import requests
+    # import requests
     url = 'https://www.vinterapi.com/api/v2/single_assets_hourly/?p=btc-usd-p-h'
     headers = {'Authorization': *****}
     r = requests.get(url, headers=headers)
@@ -26,7 +26,7 @@ info:
     where the stars are to be replaced with your API key. If you are not using Python, here is a curl command that you can use to try out th *single assets hourly* API
 
       ```
-    curl -H "Authorization: *****"https://www.vinterapi.com/api/v2/single_assets_hourly/?p=btc-usd-p-h
+    curl -H "Authorization: *****" https://www.vinterapi.com/api/v2/single_assets_hourly/?p=btc-usd-p-h
       ```
 tags:
   - name: Active multi assets hourly
