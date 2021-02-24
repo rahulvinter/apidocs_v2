@@ -46,13 +46,16 @@ You can use curl to try out the single assets hourly API
 ```curl
 curl -H "Authorization: your_secret_api_key" https://www.vinterapi.com/api/v2/single_assets_hourly/?symbol=btc-usd-p-h
 ```
+
 In Python you can do this using the request library:
+
 ```python
 import requests
 url = "https://www.vinterapi.com/api/v2/single_assets_hourly/?symbol=btc-usd-p-h"
 headers = {"Authorization": your_secret_api_key}
 r = requests.get(url, headers=headers)
 ```
+
 ### Request API key 
 All endpoints require an API key. You can request an API key by sending an email to [hello@vinter.co](mailto:hello@vinter.co)'
 tags:
