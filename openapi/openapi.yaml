@@ -48,11 +48,15 @@ By default, the API returns the most recent index value. You can control the amo
 
 You can use curl to try out the single assets hourly API
 
+
 ```
 curl -H "Authorization: your_secret_api_key" https://www.vinterapi.com/api/v2/single_assets_hourly/?symbol=btc-usd-p-h
 ```
 
+
 In Python you can do this using the request library:
+
+  
 
 ```
 import requests
