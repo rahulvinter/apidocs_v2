@@ -20,6 +20,7 @@ There are two types of indexes, depending on the number of assets that constitut
 
 * multi assets 
 
+
 Single asset indexes track the value of a single asset e.g. BTC in USD, whereas multi assets indexes track the value of a portfolio with multiple assets e.g. BTC and XAU.
 
 There are three types of frequencies: 
@@ -29,6 +30,7 @@ There are three types of frequencies:
 * hourly (h)
 
 * daily (d)
+
 
 The last letter of the index name indicate its frequency. The `btc-usd-p-d` index is a single asset index with hourly (h) frequency. The `vnby-bold1-d` index is a multi asset index with daily (d) frequency. 
 
