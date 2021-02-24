@@ -30,7 +30,7 @@ There are three types of frequencies:
 
 The last letter of the index name indicate its frequency. The `btc-usd-p-d` index is a single asset index with hourly (h) frequency. The `vnby-bold1-d` index is a multi asset index with daily (d) frequency. 
 
-## API functionality 
+### API functionality 
 
 The core functionality of the Vinter API is to 
 
@@ -39,7 +39,7 @@ The core functionality of the Vinter API is to
 
 By default, the API returns the most recent index value. You can control the amount of datapoints returned with the `limit` parameter. 
 
-## Try the API
+### Try the API
 
 You can use curl to try out the single assets hourly API
 
@@ -51,7 +51,7 @@ url = "https://www.vinterapi.com/api/v2/single_assets_hourly/?symbol=btc-usd-p-h
 headers = {"Authorization": your_secret_api_key}
 r = requests.get(url, headers=headers)
 ```
-## Request API key 
+### Request API key 
 All endpoints require an API key. You can request an API key by sending an email to [hello@vinter.co](mailto:hello@vinter.co)'
 tags:
   - name: Active multi assets hourly
