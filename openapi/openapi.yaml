@@ -38,6 +38,7 @@ The core functionality of the Vinter API is to
 2. Get current index values and metadata for a symbol.
 
 By default, the API returns the most recent index value. You can control the amount of datapoints returned with the `limit` parameter. 
+
 ## Try the API
 
 You can use curl to try out the single assets hourly API
