@@ -20,15 +20,18 @@ properties:
     description: Response message
     type: string
     example: Success
-  params:
-    description: The parameters that were used in the request
-    type: object
-    properties:
-      symbol:
-        description: The ticker of the requested index
-        type: string
-    example:
-      symbol: xau-usd-c-r
+  parameters:
+      - schema:
+          type: string
+        name: symbol
+        in: path
+        required: true
+        description: the index symbol
+      - schema:
+          type: integer
+        name: limit
+        in: path
+        description: 'The requested number of records '
   data:
     description: List of obtained records
     type: object

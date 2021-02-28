@@ -28,7 +28,7 @@ properties:
         description: The ticker of the requested index
         type: string
     example:
-      symbol: bold-h
+      symbol: vnby-bold1-h
   data:
     description: List of obtained records
     type: object

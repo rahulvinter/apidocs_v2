@@ -48,3 +48,15 @@ properties:
         value: 500
         datetime: '2020-08-10T20:00:00.00Z'
     items: {}
+  parameters:
+      - schema:
+          type: string
+        name: symbol
+        in: path
+        required: true
+        description: The index symbol
+      - schema:
+          type: string
+        name: limit
+        in: path
+        description: The requested number of records

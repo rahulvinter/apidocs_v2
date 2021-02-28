@@ -76,62 +76,14 @@ paths:
     $ref: paths/active_single_assets_hourly.yaml
   /active_single_assets_real_time/:
     $ref: paths/active_single_assets_real_time.yaml
-  '/multi_assets_hourly/{symbol}/{limit}':
+  '/multi_assets_hourly/':
     $ref: paths/multi_assets_hourly.yaml
-    parameters:
-      - schema:
-          type: string
-        name: symbol
-        in: path
-        required: true
-        description: The index symbol
-      - schema:
-          type: string
-        name: limit
-        in: path
-        description: The number of records to request
-  '/multi_assets_real_time/{symbol}/{limit}':
+  '/multi_assets_real_time/':
     $ref: paths/multi_assets_real_time.yaml
-    parameters:
-      - schema:
-          type: string
-        name: symbol
-        in: path
-        required: true
-        description: the index symbol
-      - schema:
-          type: integer
-        name: limit
-        in: path
-        description: 'The requested number of records '
-  '/single_assets_hourly/{symbol}/{limit}':
+  '/single_assets_hourly/':
     $ref: paths/single_assets_hourly.yaml
-    parameters:
-      - schema:
-          type: string
-        name: symbol
-        in: path
-        required: true
-        description: The index symbol
-      - schema:
-          type: integer
-        name: limit
-        in: path
-        description: The requested number of records
-  '/single_assets_real_time/{symbol}/{limit}':
+  '/single_assets_real_time/':
     $ref: paths/single_assets_real_time.yaml
-    parameters:
-      - schema:
-          type: string
-        name: symbol
-        in: path
-        required: true
-        description: The index symbol
-      - schema:
-          type: string
-        name: limit
-        in: path
-        description: The requested number of records
 components:
   securitySchemes:
     Authorization:
