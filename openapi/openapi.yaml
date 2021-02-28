@@ -76,13 +76,13 @@ paths:
     $ref: paths/active_single_assets_hourly.yaml
   /active_single_assets_real_time/:
     $ref: paths/active_single_assets_real_time.yaml
-  '/multi_assets_hourly/':
+  /multi_assets_hourly/:
     $ref: paths/multi_assets_hourly.yaml
-  '/multi_assets_real_time/':
+  /multi_assets_real_time/:
     $ref: paths/multi_assets_real_time.yaml
-  '/single_assets_hourly/':
+  /single_assets_hourly/:
     $ref: paths/single_assets_hourly.yaml
-  '/single_assets_real_time/':
+  /single_assets_real_time/:
     $ref: paths/single_assets_real_time.yaml
 components:
   securitySchemes:
@@ -90,3 +90,10 @@ components:
       name: API Key
       type: apiKey
       in: header
+  parameters:
+    limit:
+      name: limit
+      in: query
+      required: false
+      schema:
+        type: integer
