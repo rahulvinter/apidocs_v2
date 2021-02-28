@@ -78,8 +78,21 @@ paths:
     $ref: paths/active_single_assets_real_time.yaml
   /multi_assets_hourly/:
     $ref: paths/multi_assets_hourly.yaml
-  /multi_assets_real_time/:
+  '/multi_assets_real_time/{symbol}/{limit}':
     $ref: paths/multi_assets_real_time.yaml
+    parameters:
+      - schema:
+          type: string
+        name: symbol
+        in: path
+        required: true
+        description: the index symbol
+      - schema:
+          type: integer
+        name: limit
+        in: path
+        required: true
+        description: 'The requested number of records '
   /single_assets_hourly/:
     $ref: paths/single_assets_hourly.yaml
   /single_assets_real_time/:

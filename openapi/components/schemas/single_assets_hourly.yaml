@@ -23,27 +23,26 @@ properties:
   params:
     description: The parameters that were used in the request
     type: object
+    example:
+      symbol: btc-usd-p-h
     properties:
       symbol:
         description: The ticker of the requested index
         type: string
-    example:
-      symbol: btc-usd-p-h
   data:
     description: List of obtained records
     type: object
+    example:
+      symbol: btc-usd-p-h
+      value: 15000
+      datetime: '2020-08-10T20:00:00.00Z'
     properties:
       symbol:
         description: The index symbol
         type: string
       value:
-        description: The index value 
+        description: The index value
         type: number
       datetime:
         description: The calculation time for the index value (ISO 8601 format)
         type: string
-    example:
-      symbol: btc-usd-p-h
-      value: 15000
-      datetime: '2020-08-10T20:00:00.00Z'
-    items: {}
