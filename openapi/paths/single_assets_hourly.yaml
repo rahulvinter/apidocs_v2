@@ -19,9 +19,9 @@ get:
       required: true
       schema:
         type: string
-    - name: symbol
+    - name: limit
       in: query
-      description: The ticker of the requested index
+      description: The number of records to obtain. If the parameter is not specified the last record will be returned. 
       required: false
       schema:
         type: integer
