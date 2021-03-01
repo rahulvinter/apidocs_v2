@@ -4,6 +4,7 @@ get:
   summary: Get Multi assets real-time index values
   description: |
     This endpoint returns values for multi assets indexes, calculated on an continuous basis. The returned fields are
+    
      |  field      |  type |description   | 
     |---          |---    |---           |
     | created_at  | string| ISO formatted datetime representing when the record was registered at the API server |
