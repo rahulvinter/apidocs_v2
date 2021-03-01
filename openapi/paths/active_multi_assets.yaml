@@ -1,17 +1,17 @@
 
 get:
   tags:
-    - Active multi assets hourly
-  summary: Get active multi assets hourly indexes
+    - Active multi assets
+  summary: Get active multi assets indexes
   description: |
-    This endpoint returns information for the current multi assets hourly indexes. 
+    This endpoint returns information for the current multi assets indexes. 
   responses:
     '200':
       description: Success
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/active_multi_assets_hourly.yaml
+            $ref: ../components/schemas/active_multi_assets.yaml
     '400':
       description: Bad Request
       content:

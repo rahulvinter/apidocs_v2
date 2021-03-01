@@ -1,0 +1,59 @@
+get:
+  tags:
+    - Multi assets daily
+  summary: Get Multi assets daily index values
+  description: |
+    This endpoint returns values for multi assets indexes, calculated on a daily basis. The returned fields are 
+    
+     |  field      |  type |description   | 
+    |---          |---    |---           |
+    | created_at  | string| ISO formatted datetime representing when the record was registered at the API server |
+    | value  |  number | The index value |   
+    |  source_id | integer  |  The record's id in the index server, can be used for validation. |  
+    | timestamp | integer | Unix timestamp in milliseconds representing when the record was  registered at the API server. 
+      
+  parameters:
+    - name: symbol
+      in: query
+      description: The ticker of the requested index
+      required: true
+      schema:
+        type: string
+    - name: limit
+      in: query
+      description: The number of records to obtain. If the parameter is not specified the last record will be returned. 
+      required: false
+      schema:
+        type: integer
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/multi_assets_hourly.yaml
+    '400':
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '401':
+      description: Unauthorized 
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '429':
+      description: Too Many Requests
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+    '500':
+      description: Unknown error
+      content:
+        application/json:
+          schema:
+            $ref: ../components/schemas/non_success.yaml
+        
