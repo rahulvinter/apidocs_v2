@@ -35,5 +35,3 @@ properties:
       weights:
         description: Constituents and weights
         type: object
-        additionalProperties:
-          type: array
