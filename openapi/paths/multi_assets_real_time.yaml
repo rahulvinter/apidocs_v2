@@ -18,11 +18,17 @@ get:
       
   parameters:
     - name: symbol
-      in: path
+      in: query
       description: The ticker of the requested index
       required: true
       schema:
         type: string
+    - name: symbol
+      in: query
+      description: The ticker of the requested index
+      required: false
+      schema:
+        type: integer
   responses:
     '200':
       description: Success
