@@ -4,6 +4,7 @@ get:
   summary: Get Single assets real-time index values
   description: |
     This endpoint returns values for single assets indexes calculated on an   continuous basis. The returned fields are
+    
     |   |   |   |   |   |
     |---|---|---|---|---|
     |   |   |   |   |   |
