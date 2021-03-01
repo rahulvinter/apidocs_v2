@@ -7,7 +7,7 @@ get:
 
     |  field      |  type |description   | 
     |---          |---    |---           |
-    | created_at  | string| ISO formatted datetime representing when the record was registered at the API server |
+     | datetime | string| ISO formatted datetime representing the calculation time |
     | value  |  number | The index value |   
     |  source_id | integer  |  The record's id in the index server, can be used for validation. |  
     | timestamp | integer | Unix timestamp in milliseconds representing when  the record was  registered at the API server. 
