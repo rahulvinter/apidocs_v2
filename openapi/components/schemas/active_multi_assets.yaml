@@ -36,13 +36,4 @@ properties:
         description: Constituents and weights
         type: object
         additionalProperties:
-          type: number
-        properties:
-          symbol:
-            type: string
-          '':
-            type: string
-      '':
-        type: string
-  '':
-    type: string
+          type: array
