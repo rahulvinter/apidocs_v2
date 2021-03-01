@@ -6,8 +6,7 @@ x-examples:
     message: Success
     data:
       symbol: xlm-usd-p-h
-      contrib: ["bitstamp", "kraken", "bitfinex"]  
-      period: 3600
+      contrib: ["xlm-usd-bitstamp", "xlm-usd-kraken", "xlm-usd-bitfinex"]
          
 description: The schema that is returned at a successful request
 properties:
@@ -29,11 +28,7 @@ properties:
       contrib: 
         description: Contributing exchanges
         type: array
-      period:
-        description: The length of the calculation period in seconds
-        type: integer
     example:
       symbol: xlm-usd-p-h
-      contrib: ["bitstamp", "kraken", "bitfinex"]
-      period: 3600
+      contrib: ["xlm-usd-bitstamp", "xlm-usd-kraken", "xlm-usd-bitfinex"]
     items: {}

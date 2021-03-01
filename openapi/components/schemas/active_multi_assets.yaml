@@ -5,10 +5,11 @@ x-examples:
     result: success
     message: Success
     data:
+      divisor: 1
       symbol: vnby-bold1-h
-      composition:
+      weights:
         btc-usd-p-h: 0.8
-        aux-usd-p-h: 0.2
+        xau-usd-p-h: 0.2
 description: The schema that is returned at a successful request
 properties:
   result:
@@ -24,14 +25,14 @@ properties:
     type: object
     example:
       symbol: vnby-bold1-h
-      composition:
+      weights:
         btc-usd-p-h: 0.8
         xau-usd-p-h: 0.2
     properties:
       symbol:
         description: The index symbol
         type: string
-      composition:
+      weights:
         description: Constituents and weights
         type: object
         additionalProperties:
