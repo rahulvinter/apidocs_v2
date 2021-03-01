@@ -1,0 +1,60 @@
+title: single_assets_daily
+type: object
+x-examples:
+  example:
+    result: success
+    message: Success
+    params:
+      symbol: btc-usd-p-d
+    data:
+      - symbol: btc-usd-p-d
+        value: 15000
+        datetime: '2020-08-10T20:00:00.00Z'
+description: The schema that is returned for a 200 response
+properties:
+  result:
+    description: Takes the value success for a 200 response
+    type: string
+    example: success
+  message:
+    description: Response message
+    type: string
+    example: Success
+  params:
+    description: The parameters that were used in the request
+    type: object
+    example:
+      symbol: btc-usd-p-d
+    properties:
+      symbol:
+        description: The ticker of the requested index
+        type: string
+  data:
+    description: List of obtained records
+    type: object
+    example:
+      symbol: btc-usd-p-d
+      value: 15000
+      datetime: '2020-08-10T20:00:00.00Z'
+    properties:
+      symbol:
+        description: The index symbol
+        type: string
+      value:
+        description: The index value
+        type: number
+      datetime:
+        description: The calculation time for the index value (ISO 8601 format)
+        type: string
+  parameters:
+      - schema:
+          type: string
+        name: symbol
+        in: path
+        required: true
+        description: The index symbol
+      - schema:
+          type: integer
+        name: limit
+        in: path
+        description: The requested number of records
