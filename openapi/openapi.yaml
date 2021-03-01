@@ -97,3 +97,4 @@ components:
       required: false
       schema:
         type: integer
+      description: The number of requested records
