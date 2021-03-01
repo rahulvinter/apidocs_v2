@@ -5,6 +5,7 @@ get:
   summary: Get active multi assets indexes
   description: |
     This endpoint returns information for the current multi assets indexes. 
+    
      |  field      |  type |description   | 
     |---          |---    |---           |
     | symbol  | string| The index symbol|

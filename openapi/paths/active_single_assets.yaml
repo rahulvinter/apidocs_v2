@@ -8,7 +8,7 @@ get:
     |  field      |  type |description   | 
     |---          |---    |---           |
     | symbol  | string| The index symbol|
-    | contrib  |  array | Contributing markets, the market symbol is constructed as <base currency>-<quote currency>-<exchange>|   
+    | contrib  |  array | Contributing markets, the market symbol is constructed as "base currency"-"quote currency"-"exchange"|   
     
   responses:
     '200':
