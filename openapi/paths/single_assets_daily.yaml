@@ -10,7 +10,7 @@ get:
      | datetime | string| ISO formatted datetime representing the calculation time |
     | value  |  number | The index value |   
     |  symbol | string  |  The index symbol. |  
-    | timestamp | integer | Unix timestamp in milliseconds representing when  the record was  registered at the API server. 
+    | timestamp | integer | Unix timestamp in milliseconds representing the calculation time.|
       
   parameters:
     - name: symbol
