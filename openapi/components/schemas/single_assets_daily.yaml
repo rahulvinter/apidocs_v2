@@ -50,11 +50,11 @@ properties:
       - schema:
           type: string
         name: symbol
-        in: path
+        in: query
         required: true
         description: The index symbol
       - schema:
           type: integer
         name: limit
-        in: path
+        in: query
         description: The requested number of records
