@@ -22,18 +22,6 @@ properties:
     description: Response message
     type: string
     example: Success
-  '':
-    - schema:
-        type: string
-      name: symbol
-      in: path
-      required: true
-      description: the index symbol
-    - schema:
-        type: integer
-      name: limit
-      in: path
-      description: 'The requested number of records '
   data:
     description: List of obtained records
     type: object
