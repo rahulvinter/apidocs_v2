@@ -32,3 +32,6 @@ properties:
       symbol:
         description: The index symbol
         type: string
+      weights:
+        type: string
+        description: The index consituents and weights
