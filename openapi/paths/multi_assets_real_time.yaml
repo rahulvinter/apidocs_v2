@@ -3,7 +3,7 @@ get:
     - Multi assets real-time
   summary: Get Multi assets real-time index values
   description: |
-    This endpoint returns values for multi assets indexes, calculated on an continuous basis. The returned fields are
+    This endpoint returns values for multi assets indexes, calculated on a continuous basis. The returned fields are
     
      |  field      |  type |description   | 
     |---          |---    |---           |
