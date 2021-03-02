@@ -48,15 +48,3 @@ properties:
       datetime:
         description: The calculation time for the index value (ISO 8601 format)
         type: string
-  '':
-    - schema:
-        type: string
-      name: symbol
-      in: query
-      required: true
-      description: The index symbol
-    - schema:
-        type: string
-      name: limit
-      in: query
-      description: The requested number of records
