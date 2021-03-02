@@ -29,6 +29,8 @@ properties:
       symbol:
         description: The ticker of the requested index
         type: string
+      limit:
+        type: integer
   data:
     description: List of obtained records
     type: object
@@ -46,15 +48,15 @@ properties:
       datetime:
         description: The calculation time for the index value (ISO 8601 format)
         type: string
-  parameters:
-      - schema:
-          type: string
-        name: symbol
-        in: query
-        required: true
-        description: The index symbol
-      - schema:
-          type: integer
-        name: limit
-        in: query
-        description: The requested number of records
+  '':
+    - schema:
+        type: string
+      name: symbol
+      in: query
+      required: true
+      description: The index symbol
+    - schema:
+        type: integer
+      name: limit
+      in: query
+      description: The requested number of records
