@@ -39,8 +39,11 @@ properties:
         type: string
   params:
     type: object
+    description: The query parameters
     properties:
       symbol:
         type: string
+        description: The index symbol
       limit:
         type: integer
+        description: the number of requested records
