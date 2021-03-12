@@ -64,7 +64,7 @@ tags:
     description: 'The multi assets real-time endpoint returns values on a specific multi asset index that is calculated on a continuous basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example URL** ``` https://www.vinterapi.com/api/v2/multi_assets_real_time/?symbol=vntr-5eq-r ```'
 
   - name: Single assets daily
-    description: 'The single assets daily endpoint returns values for a specific single asset index that is calculated on a daily basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example URL** ``` https://www.vinterapi.com/api/v2/single_assets_daily/?symbol=btc-usd-p-h ```'
+    description: 'The single assets daily endpoint returns values for a specific single asset index that is calculated on a daily basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example URL** ``` https://www.vinterapi.com/api/v2/single_assets_daily/?symbol=btc-usd-p-d ```'
   - name: Single assets hourly
     description: 'The single assets hourly endpoint returns values for a specific single asset index that is calculated on an hourly basis. The endpoint requires an API key and it requires that the symbol of the index is specified using the symbol parameter. **Example URL** ``` https://www.vinterapi.com/api/v2/single_assets_hourly/?symbol=btc-usd-p-h ```'
   - name: Single assets real-time
