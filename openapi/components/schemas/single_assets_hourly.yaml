@@ -10,6 +10,7 @@ x-examples:
       - symbol: btc-usd-p-h
         value: 15000
         datetime: '2020-08-10T20:00:00.00Z'
+        timestamp: 1616249298000
 description: The schema that is returned for a 200 response
 properties:
   result:
@@ -39,6 +40,7 @@ properties:
       symbol: btc-usd-p-h
       value: 15000
       datetime: '2020-08-10T20:00:00.00Z'
+      timestamp: 1616249298000
     properties:
       symbol:
         description: The index symbol
