@@ -41,6 +41,9 @@ properties:
       datetime:
         description: The calculation time for the index value (ISO 8601 format)
         type: string
+      timestamp:
+        type: integer
+        description: Unix timestamp in milliseconds representing the calculation time.
   params:
     type: object
     description: The query parameters
