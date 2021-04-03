@@ -4,7 +4,7 @@ get:
   summary: Get Multi assets daily index values
   description: |
     This endpoint returns values for multi assets indexes, calculated on a daily basis. The returned fields are 
-    
+    |  field      |  type |description   | 
     |---          |---    |---           |
     | datetime | string| ISO formatted datetime representing the calculation time |
     | value  |  number | The index value |   
