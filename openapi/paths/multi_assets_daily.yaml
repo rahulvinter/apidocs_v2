@@ -32,7 +32,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../components/schemas/multi_assets_hourly.yaml
+            $ref: ../components/schemas/multi_assets_daily.yaml
     '400':
       description: Bad Request
       content:
