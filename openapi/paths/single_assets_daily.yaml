@@ -11,6 +11,7 @@ get:
     | value  |  number | The index value |   
     |  symbol | string  |  The index symbol. |  
     | timestamp | integer | Unix timestamp in milliseconds representing the calculation time.|
+    | source_id | integer |The record's id in the source table. A source_id that equals 0 means that it is not an official value.| 
       
   parameters:
     - name: symbol
