@@ -11,6 +11,8 @@ x-examples:
         value: 15000
         datetime: '2020-08-10T20:00:00.00Z'
         timestamp: 1616249298000
+        source_id: 1
+
 description: The schema that is returned for a 200 response
 properties:
   result:
@@ -41,6 +43,7 @@ properties:
       value: 15000
       datetime: '2020-08-10T20:00:00.00Z'
       timestamp: 1616249298000
+      source_id: 1
     properties:
       symbol:
         description: The index symbol
@@ -54,3 +57,7 @@ properties:
       timestamp:
         type: integer
         description: Unix timestamp in milliseconds representing the calculation time.
+      description: Unix timestamp in milliseconds representing 
+      source_id:
+        type: integer
+        description: The record's id in the source table. A source_id that equals 0 means that it is not an official value.the calculation time.
