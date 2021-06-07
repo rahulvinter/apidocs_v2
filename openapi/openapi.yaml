@@ -1,7 +1,7 @@
 openapi: 3.0.2
 info:
   version: 2.0.0
-  title: Welcome to The Vinter APIs
+  title: Welcome to The Vinter API
   termsOfService: 'https://vintercapital.com/tos/'
   contact:
     email: hello@vinter.co
@@ -25,10 +25,10 @@ info:
     * daily (d)
 
     The last letter of the index name indicates its frequency. The `btc-usd-p-d` index is a single asset index with hourly (h) frequency. The `vnby-bold1-d` index is a multi asset index with daily (d) frequency. 
- 
+
     ### Historical values
     For the daily index series Vinter provides historical time-series. Values prior to the official start date of the index are only approximate values and should not be used for critical analysis. Historical values has a source_id of 0. This makes it easy to separate them from the official values.  
-    
+
     ### API functionality 
     The core functionality of the Vinter API is to
 
