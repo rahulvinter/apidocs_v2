@@ -33,9 +33,9 @@ info:
     The core functionality of the Vinter API is to
 
     1. get symbols for all active index values.  
-    2. get current index values and metadata for a symbol.
+    2. get current index values and metadata for each index.
 
-    By default, the API returns the most recent index value. You can control the number of records returned with the `limit` parameter. 
+    By default, the API returns the most recent index value. You can control the number of records returned with the `limit` parameter. The API returns a maximum of 2000 records. If you are interested in the full history please contact [hello@vinter.co](mailto:hello@vinter.co)
 
     ### Try the API
     You can use curl to try out the single assets hourly API

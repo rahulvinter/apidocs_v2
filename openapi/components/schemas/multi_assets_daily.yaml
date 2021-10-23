@@ -12,8 +12,18 @@ x-examples:
         datetime: '2020-08-10T20:00:00.00Z'
         timestamp: 1616249298000
         source_id: 1
-        
 description: The schema that is returned for a 200 response
+examples:
+  - result: success
+    message: Success
+    params:
+      symbol: vnby-bold1-d
+    data:
+      symbol: vnby-bold1-d
+      value: 1112
+      datetime: '2020-08-10T20:00:00.00Z'
+      timestamp: 1616249298000
+      source_id: 1
 properties:
   result:
     description: Takes the value success for a 200 response
@@ -44,7 +54,6 @@ properties:
       datetime: '2020-08-10T20:00:00.00Z'
       timestamp: 1616249298000
       source_id: 1
-
     properties:
       symbol:
         description: The index symbol
