@@ -12,7 +12,14 @@ info:
     url: www.vinter.co
   x-logo:
     url: 'https://i.postimg.cc/7Y3fY9V1/vinterlogomedpadding.png'
-  description: |
+  description: |      
+    # API Changes
+    The API may undergo incremental changes and any code consuming this API should be developed to accept:
+    
+    * The addition of new API endpoints
+    * The addition of optional parameters to existing API requests
+    * The addition of fields to existing API responses
+
     # Index structure
     There are indexes containing one or multiple constituents. These two categories are:
     * single assets
